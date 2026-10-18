@@ -1,0 +1,63 @@
+{
+  "feature_count": 30,
+  "selected_features": [
+    "ICULOS",
+    "FiO2_was_missing",
+    "Lactate_was_missing",
+    "Temp_rolling_mean_6",
+    "EtCO2_was_missing",
+    "Temp_rolling_max_6",
+    "SBP_rolling_min_6_was_missing",
+    "DBP_rolling_max_6_was_missing",
+    "Resp_rolling_mean_6",
+    "Temp_rolling_min_3",
+    "HR_rolling_max_6",
+    "HR_rolling_max_3",
+    "DBP_rolling_min_6_was_missing",
+    "HospAdmTime",
+    "SBP_rolling_mean_6_was_missing",
+    "MAP_rolling_min_6",
+    "SBP_rolling_min_6",
+    "SBP_rolling_max_6_was_missing",
+    "Unit1_was_missing",
+    "BUN",
+    "DBP_rolling_min_3_was_missing",
+    "Resp_rolling_min_6",
+    "DBP_rolling_mean_6_was_missing",
+    "Unit2_was_missing",
+    "Unit2",
+    "pH_was_missing",
+    "MAP_rolling_min_3",
+    "SBP_rolling_min_3",
+    "Unit1",
+    "Resp_rolling_mean_3"
+  ],
+  "threshold": 0.4600000000000001,
+  "validation_metrics": {
+    "accuracy": 0.7663432294186769,
+    "precision": 0.05300574825851047,
+    "recall": 0.7111965401249399,
+    "f1": 0.09865844512957253,
+    "pr_auc": 0.08687280412508001,
+    "confusion": [
+      174427,
+      52883,
+      1202,
+      2960
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.7649358520200426,
+    "precision": 0.05426098535286285,
+    "recall": 0.7384358607534574,
+    "f1": 0.10109352048310756,
+    "pr_auc": 0.12677107487388026,
+    "confusion": [
+      176129,
+      53979,
+      1097,
+      3097
+    ]
+  },
+  "model_path": "E:\\Earlysepsispredicton\\models\\experiments\\xgboost_important_features.pkl"
+}

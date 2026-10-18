@@ -1,0 +1,20 @@
+{
+  "model_path": "models\\lightgbm_optimized.pkl",
+  "features": 196,
+  "best_validation": {
+    "precision": 0.4481012658227848,
+    "recall": 0.4022727272727273,
+    "f1_score": 0.4239520958083832,
+    "true_positives": 177,
+    "false_positives": 218,
+    "false_negatives": 263,
+    "true_negatives": 5392,
+    "predicted_positive_patients": 395,
+    "actual_positive_patients": 440,
+    "alerts_per_patient": 1.1477685950413223,
+    "false_alerts_per_icu_stay": 0.23458110516934047,
+    "roc_auc": 0.8364946929184897,
+    "pr_auc": 0.4560430717862396,
+    "threshold": 0.75
+  }
+}

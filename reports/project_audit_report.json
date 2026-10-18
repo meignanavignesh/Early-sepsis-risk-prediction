@@ -1,0 +1,50 @@
+{
+  "patient_level_split": true,
+  "patient_leakage": {
+    "train_intersection_validation": {
+      "count": 0,
+      "empty": true
+    },
+    "train_intersection_test": {
+      "count": 0,
+      "empty": true
+    },
+    "validation_intersection_test": {
+      "count": 0,
+      "empty": true
+    }
+  },
+  "splits": {
+    "train": {
+      "rows": 1086436,
+      "patients": 28235,
+      "sepsis_patients": 2052,
+      "non_sepsis_patients": 26183,
+      "positive_observations": 19560,
+      "negative_observations": 1066876
+    },
+    "validation": {
+      "rows": 231472,
+      "patients": 6050,
+      "sepsis_patients": 440,
+      "non_sepsis_patients": 5610,
+      "positive_observations": 4162,
+      "negative_observations": 227310
+    },
+    "test": {
+      "rows": 234302,
+      "patients": 6051,
+      "sepsis_patients": 440,
+      "non_sepsis_patients": 5611,
+      "positive_observations": 4194,
+      "negative_observations": 230108
+    }
+  },
+  "production": {
+    "model": "models/xgboost_optimized.pkl",
+    "prediction_output": "data/processed/final_predictions.csv",
+    "threshold": 0.6,
+    "required_consecutive": 2,
+    "feature_count": 196
+  }
+}

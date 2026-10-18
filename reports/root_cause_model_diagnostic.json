@@ -1,0 +1,267 @@
+{
+  "status": "complete",
+  "model_training_performed": false,
+  "production_modified": false,
+  "streamlit_modified": false,
+  "test_set_modified": false,
+  "label_audit": {
+    "train": {
+      "patients": 28235,
+      "observations": 1086436,
+      "sepsis_patients": 2052,
+      "non_sepsis_patients": 26183,
+      "positive_observations": 19560,
+      "negative_observations": 1066876,
+      "hourly_negative_positive_ratio": 54.543762781186096,
+      "patient_negative_positive_ratio": 12.759746588693957,
+      "first_positive_hour": {
+        "median": 30.0,
+        "p25": 7.0,
+        "p75": 73.0
+      },
+      "positive_rows_per_patient": {
+        "median": 10.0,
+        "p25": 9.0,
+        "p75": 10.0
+      },
+      "max_positive_run": {
+        "median": 10.0,
+        "isolated_patients": 3,
+        "sustained_patients": 2049
+      }
+    },
+    "validation": {
+      "patients": 6050,
+      "observations": 231472,
+      "sepsis_patients": 440,
+      "non_sepsis_patients": 5610,
+      "positive_observations": 4162,
+      "negative_observations": 227310,
+      "hourly_negative_positive_ratio": 54.615569437770304,
+      "patient_negative_positive_ratio": 12.75,
+      "first_positive_hour": {
+        "median": 23.0,
+        "p25": 6.0,
+        "p75": 68.25
+      },
+      "positive_rows_per_patient": {
+        "median": 10.0,
+        "p25": 9.0,
+        "p75": 10.0
+      },
+      "max_positive_run": {
+        "median": 10.0,
+        "isolated_patients": 1,
+        "sustained_patients": 439
+      }
+    },
+    "test": {
+      "patients": 6051,
+      "observations": 234302,
+      "sepsis_patients": 440,
+      "non_sepsis_patients": 5611,
+      "positive_observations": 4194,
+      "negative_observations": 230108,
+      "hourly_negative_positive_ratio": 54.865999046256555,
+      "patient_negative_positive_ratio": 12.752272727272727,
+      "first_positive_hour": {
+        "median": 34.0,
+        "p25": 8.0,
+        "p75": 81.25
+      },
+      "positive_rows_per_patient": {
+        "median": 10.0,
+        "p25": 9.0,
+        "p75": 10.0
+      },
+      "max_positive_run": {
+        "median": 10.0,
+        "isolated_patients": 1,
+        "sustained_patients": 439
+      }
+    }
+  },
+  "alert_rule_audit": {
+    "1": {
+      "tp": 280,
+      "tn": 5037,
+      "fp": 574,
+      "fn": 160,
+      "precision": 0.32786885245901637,
+      "recall": 0.6363636363636364,
+      "f1": 0.4327666151468315
+    },
+    "2": {
+      "tp": 228,
+      "tn": 5295,
+      "fp": 316,
+      "fn": 212,
+      "precision": 0.41911764705882354,
+      "recall": 0.5181818181818182,
+      "f1": 0.4634146341463415
+    },
+    "3": {
+      "tp": 209,
+      "tn": 5376,
+      "fp": 235,
+      "fn": 231,
+      "precision": 0.47072072072072074,
+      "recall": 0.475,
+      "f1": 0.47285067873303166
+    },
+    "two_rule_misses_due_to_consecutive": 52,
+    "two_rule_false_alerts_removed_vs_single": 258,
+    "test_predictions_read_only": true
+  },
+  "pre_onset_signal": {
+    "septic_median_by_hours_before_onset": [
+      {
+        "HR": 86.0,
+        "Resp": 18.0,
+        "MAP": 80.0,
+        "SBP": 121.0,
+        "O2Sat": 98.0,
+        "Temp": 37.0,
+        "Lactate": 1.8,
+        "WBC": 10.3,
+        "Creatinine": 0.94,
+        "relative_hour": 24
+      },
+      {
+        "HR": 84.0,
+        "Resp": 18.0,
+        "MAP": 79.0,
+        "SBP": 121.0,
+        "O2Sat": 98.0,
+        "Temp": 37.0,
+        "Lactate": 1.8,
+        "WBC": 10.3,
+        "Creatinine": 0.94,
+        "relative_hour": 12
+      },
+      {
+        "HR": 87.0,
+        "Resp": 19.0,
+        "MAP": 79.0,
+        "SBP": 121.0,
+        "O2Sat": 98.0,
+        "Temp": 37.0,
+        "Lactate": 1.8,
+        "WBC": 10.3,
+        "Creatinine": 0.94,
+        "relative_hour": 6
+      },
+      {
+        "HR": 86.5,
+        "Resp": 20.0,
+        "MAP": 79.0,
+        "SBP": 121.0,
+        "O2Sat": 98.0,
+        "Temp": 37.0,
+        "Lactate": 1.8,
+        "WBC": 10.3,
+        "Creatinine": 0.94,
+        "relative_hour": 3
+      },
+      {
+        "HR": 88.0,
+        "Resp": 19.0,
+        "MAP": 80.0,
+        "SBP": 121.0,
+        "O2Sat": 98.0,
+        "Temp": 37.0,
+        "Lactate": 1.8,
+        "WBC": 10.3,
+        "Creatinine": 0.94,
+        "relative_hour": 1
+      },
+      {
+        "HR": 84.0,
+        "Resp": 18.0,
+        "MAP": 80.0,
+        "SBP": 121.0,
+        "O2Sat": 98.0,
+        "Temp": 37.0,
+        "Lactate": 1.8,
+        "WBC": 10.3,
+        "Creatinine": 0.94,
+        "relative_hour": 0
+      }
+    ],
+    "non_septic_median": {
+      "HR": 83.5,
+      "Resp": 18.0,
+      "MAP": 80.0,
+      "SBP": 121.0,
+      "O2Sat": 98.0,
+      "Temp": 37.0,
+      "Lactate": 1.8,
+      "WBC": 10.3,
+      "Creatinine": 0.94
+    },
+    "variables": [
+      "HR",
+      "Resp",
+      "MAP",
+      "SBP",
+      "O2Sat",
+      "Temp",
+      "Lactate",
+      "WBC",
+      "Creatinine"
+    ],
+    "diagnostic_only": true
+  },
+  "split_report": {
+    "random_state": 42,
+    "split_ratios": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    },
+    "patient_level_split": true,
+    "patient_leakage_detected": false,
+    "overall": {
+      "patients": 40336,
+      "sepsis_patients": 2932,
+      "non_sepsis_patients": 37404,
+      "observations": 1552210,
+      "sepsis_positive_observations": 27916,
+      "non_sepsis_observations": 1524294
+    },
+    "train": {
+      "patients": 28235,
+      "sepsis_patients": 2052,
+      "non_sepsis_patients": 26183,
+      "observations": 1086436,
+      "sepsis_positive_observations": 19560,
+      "non_sepsis_observations": 1066876
+    },
+    "validation": {
+      "patients": 6050,
+      "sepsis_patients": 440,
+      "non_sepsis_patients": 5610,
+      "observations": 231472,
+      "sepsis_positive_observations": 4162,
+      "non_sepsis_observations": 227310
+    },
+    "test": {
+      "patients": 6051,
+      "sepsis_patients": 440,
+      "non_sepsis_patients": 5611,
+      "observations": 234302,
+      "sepsis_positive_observations": 4194,
+      "non_sepsis_observations": 230108
+    }
+  },
+  "feature_alignment": {
+    "patient_order": [
+      "Patient_ID",
+      "ICULOS"
+    ],
+    "future_features_used_by_existing_temporal_pipeline": false,
+    "centered_windows": false,
+    "patient_id_as_model_feature": false
+  },
+  "scale_pos_weight_production": 27.271881390593048
+}

@@ -1,0 +1,56 @@
+{
+  "evaluation_type": "patient_level_temporal_test",
+  "model_output": "data\\processed\\final_predictions.csv",
+  "patients": 6051,
+  "threshold": 0.5,
+  "required_consecutive": 1,
+  "decision_rule": "At least 1 consecutive ICU observations with Sepsis_Probability >= 0.50",
+  "test_set_used_for_optimization": false,
+  "metrics": {
+    "accuracy": 0.7005453644025781,
+    "precision": 0.174573055028463,
+    "recall": 0.8363636363636363,
+    "f1_score": 0.28885400313971743,
+    "specificity": 0.6898948494029584,
+    "roc_auc": 0.8620732813791092,
+    "pr_auc": 0.5430374058362057,
+    "true_negatives": 3871,
+    "false_positives": 1740,
+    "false_negatives": 72,
+    "true_positives": 368,
+    "alerts_per_patient": 12.423401090728806,
+    "false_alerts_per_icu_stay": 9.638923543040455,
+    "detected_before_onset": 290,
+    "detected_at_least_3h_before": 281,
+    "detected_at_least_6h_before": 260,
+    "detected_at_least_12h_before": 240,
+    "median_lead_time_hours": 32.0
+  },
+  "confusion_matrix": [
+    [
+      3871,
+      1740
+    ],
+    [
+      72,
+      368
+    ]
+  ],
+  "selection_data": "validation_only",
+  "selected_validation_configuration": {
+    "model": "lightgbm_optimized",
+    "model_path": "models\\lightgbm_optimized.pkl",
+    "threshold": 0.5,
+    "required_consecutive": 1,
+    "validation_accuracy": 0.696198347107438,
+    "validation_precision": 0.16840607210626185,
+    "validation_recall": 0.8068181818181818,
+    "validation_f1": 0.27864992150706436,
+    "validation_specificity": 0.6875222816399287,
+    "validation_roc_auc": 0.8364946929184897,
+    "validation_pr_auc": 0.4560430717862396,
+    "false_alerts_per_icu_stay": 9.808199643493761
+  },
+  "test_used_for_selection": false,
+  "validation_comparison_path": "reports\\model_comparison_validation.csv"
+}

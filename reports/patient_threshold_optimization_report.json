@@ -1,0 +1,213 @@
+{
+    "evaluation_level": "patient",
+    "dataset_used": "validation",
+    "validation_patients": 6050,
+    "validation_sepsis_patients": 440,
+    "thresholds_tested": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.65,
+        0.7,
+        0.75,
+        0.8,
+        0.85,
+        0.9
+    ],
+    "selection_metric": "F1-score",
+    "selected_threshold": 0.85,
+    "selected_threshold_metrics": {
+        "accuracy": 0.9314049586776859,
+        "precision": 0.543859649122807,
+        "recall": 0.3522727272727273,
+        "f1_score": 0.42758620689655175,
+        "predicted_positive_patients": 285,
+        "false_positive_patients": 130,
+        "false_negative_patients": 285
+    },
+    "recall_target": 0.8,
+    "best_threshold_with_recall_target": 0.55,
+    "test_set_used_for_selection": false,
+    "data_leakage_prevented": true,
+    "threshold_results": [
+        {
+            "threshold": 0.1,
+            "accuracy": 0.07553719008264463,
+            "precision": 0.07293220619923753,
+            "recall": 1.0,
+            "f1_score": 0.13594932797775375,
+            "predicted_positive_patients": 6033,
+            "false_positive_patients": 5593,
+            "false_negative_patients": 0
+        },
+        {
+            "threshold": 0.15,
+            "accuracy": 0.10066115702479339,
+            "precision": 0.07467256336111584,
+            "recall": 0.9977272727272727,
+            "f1_score": 0.13894603576515271,
+            "predicted_positive_patients": 5879,
+            "false_positive_patients": 5440,
+            "false_negative_patients": 1
+        },
+        {
+            "threshold": 0.2,
+            "accuracy": 0.1543801652892562,
+            "precision": 0.07873873873873874,
+            "recall": 0.9931818181818182,
+            "f1_score": 0.14590984974958263,
+            "predicted_positive_patients": 5550,
+            "false_positive_patients": 5113,
+            "false_negative_patients": 3
+        },
+        {
+            "threshold": 0.25,
+            "accuracy": 0.21917355371900826,
+            "precision": 0.08423913043478261,
+            "recall": 0.9863636363636363,
+            "f1_score": 0.1552217453505007,
+            "predicted_positive_patients": 5152,
+            "false_positive_patients": 4718,
+            "false_negative_patients": 6
+        },
+        {
+            "threshold": 0.3,
+            "accuracy": 0.29570247933884297,
+            "precision": 0.09151165276886894,
+            "recall": 0.9727272727272728,
+            "f1_score": 0.16728551885870627,
+            "predicted_positive_patients": 4677,
+            "false_positive_patients": 4249,
+            "false_negative_patients": 12
+        },
+        {
+            "threshold": 0.35,
+            "accuracy": 0.37471074380165287,
+            "precision": 0.10097875387920745,
+            "recall": 0.9613636363636363,
+            "f1_score": 0.18276085547634477,
+            "predicted_positive_patients": 4189,
+            "false_positive_patients": 3766,
+            "false_negative_patients": 17
+        },
+        {
+            "threshold": 0.4,
+            "accuracy": 0.44297520661157025,
+            "precision": 0.11057947900053164,
+            "recall": 0.9454545454545454,
+            "f1_score": 0.1980009519276535,
+            "predicted_positive_patients": 3762,
+            "false_positive_patients": 3346,
+            "false_negative_patients": 24
+        },
+        {
+            "threshold": 0.45,
+            "accuracy": 0.5247933884297521,
+            "precision": 0.12549984620116886,
+            "recall": 0.9272727272727272,
+            "f1_score": 0.22107829856407477,
+            "predicted_positive_patients": 3251,
+            "false_positive_patients": 2843,
+            "false_negative_patients": 32
+        },
+        {
+            "threshold": 0.5,
+            "accuracy": 0.5935537190082645,
+            "precision": 0.14036337727110795,
+            "recall": 0.8954545454545455,
+            "f1_score": 0.24268555589775176,
+            "predicted_positive_patients": 2807,
+            "false_positive_patients": 2413,
+            "false_negative_patients": 46
+        },
+        {
+            "threshold": 0.55,
+            "accuracy": 0.6613223140495867,
+            "precision": 0.15634344297308841,
+            "recall": 0.8318181818181818,
+            "f1_score": 0.2632146709816613,
+            "predicted_positive_patients": 2341,
+            "false_positive_patients": 1975,
+            "false_negative_patients": 74
+        },
+        {
+            "threshold": 0.6,
+            "accuracy": 0.7305785123966942,
+            "precision": 0.18113612004287247,
+            "recall": 0.7681818181818182,
+            "f1_score": 0.29314830875975717,
+            "predicted_positive_patients": 1866,
+            "false_positive_patients": 1528,
+            "false_negative_patients": 102
+        },
+        {
+            "threshold": 0.65,
+            "accuracy": 0.7862809917355372,
+            "precision": 0.20727522306108442,
+            "recall": 0.6863636363636364,
+            "f1_score": 0.3183974696889826,
+            "predicted_positive_patients": 1457,
+            "false_positive_patients": 1155,
+            "false_negative_patients": 138
+        },
+        {
+            "threshold": 0.7,
+            "accuracy": 0.8419834710743802,
+            "precision": 0.2561436672967864,
+            "recall": 0.615909090909091,
+            "f1_score": 0.36181575433911883,
+            "predicted_positive_patients": 1058,
+            "false_positive_patients": 787,
+            "false_negative_patients": 169
+        },
+        {
+            "threshold": 0.75,
+            "accuracy": 0.8814876033057851,
+            "precision": 0.31459170013386883,
+            "recall": 0.5340909090909091,
+            "f1_score": 0.3959561920808762,
+            "predicted_positive_patients": 747,
+            "false_positive_patients": 512,
+            "false_negative_patients": 205
+        },
+        {
+            "threshold": 0.8,
+            "accuracy": 0.9120661157024793,
+            "precision": 0.4045643153526971,
+            "recall": 0.4431818181818182,
+            "f1_score": 0.4229934924078091,
+            "predicted_positive_patients": 482,
+            "false_positive_patients": 287,
+            "false_negative_patients": 245
+        },
+        {
+            "threshold": 0.85,
+            "accuracy": 0.9314049586776859,
+            "precision": 0.543859649122807,
+            "recall": 0.3522727272727273,
+            "f1_score": 0.42758620689655175,
+            "predicted_positive_patients": 285,
+            "false_positive_patients": 130,
+            "false_negative_patients": 285
+        },
+        {
+            "threshold": 0.9,
+            "accuracy": 0.9409917355371901,
+            "precision": 0.7943262411347518,
+            "recall": 0.2545454545454545,
+            "f1_score": 0.3855421686746988,
+            "predicted_positive_patients": 141,
+            "false_positive_patients": 29,
+            "false_negative_patients": 328
+        }
+    ],
+    "threshold_table": "reports\\patient_threshold_results.csv"
+}

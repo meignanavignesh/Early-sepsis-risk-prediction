@@ -1,0 +1,27 @@
+{
+  "evaluation_type": "patient_level_temporal_test",
+  "model": "optimized XGBoost",
+  "threshold": 0.6,
+  "required_consecutive": 2,
+  "patients": 6051,
+  "metrics": {
+    "accuracy": 0.9127416955875062,
+    "precision": 0.41911764705882354,
+    "recall": 0.5181818181818182,
+    "f1_score": 0.4634146341463415
+  },
+  "confusion_matrix": [
+    [
+      5295,
+      316
+    ],
+    [
+      212,
+      228
+    ]
+  ],
+  "true_negatives": 5295,
+  "false_positives": 316,
+  "false_negatives": 212,
+  "true_positives": 228
+}

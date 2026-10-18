@@ -1,0 +1,63 @@
+{
+  "method": "training-only undersampling plus top-30 training-ranked features",
+  "selected_features": [
+    "ICULOS",
+    "FiO2_was_missing",
+    "Temp_rolling_mean_6",
+    "Lactate_was_missing",
+    "Temp_rolling_max_6",
+    "EtCO2_was_missing",
+    "Resp_rolling_mean_6",
+    "SBP_rolling_min_6_was_missing",
+    "DBP_rolling_max_6_was_missing",
+    "HR_rolling_max_6",
+    "Temp_rolling_min_3",
+    "HR_rolling_max_3",
+    "DBP_rolling_min_6_was_missing",
+    "HospAdmTime",
+    "MAP_rolling_min_6",
+    "SBP_rolling_mean_6_was_missing",
+    "SBP_rolling_min_6",
+    "Unit2_was_missing",
+    "SBP_rolling_max_6_was_missing",
+    "Unit1_was_missing",
+    "Resp_rolling_min_6",
+    "BUN",
+    "DBP_rolling_min_3_was_missing",
+    "DBP_rolling_mean_6_was_missing",
+    "SBP_rolling_min_3",
+    "MAP_rolling_min_3",
+    "Unit2",
+    "pH_was_missing",
+    "Unit1",
+    "SBP_rolling_mean_6"
+  ],
+  "threshold": 0.6000000000000001,
+  "validation_metrics": {
+    "accuracy": 0.7575206611570248,
+    "precision": 0.19196160767846432,
+    "recall": 0.7272727272727273,
+    "f1": 0.30374940673943995,
+    "pr_auc": 0.08724089903636993,
+    "confusion": [
+      4263,
+      1347,
+      120,
+      320
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.7679722359940506,
+    "precision": 0.20752427184466019,
+    "recall": 0.7772727272727272,
+    "f1": 0.3275862068965517,
+    "pr_auc": 0.12400428246321399,
+    "confusion": [
+      4305,
+      1306,
+      98,
+      342
+    ]
+  },
+  "model_path": "e:\\Earlysepsispredicton\\models\\experiments\\improvement\\balanced_important_xgboost.pkl"
+}

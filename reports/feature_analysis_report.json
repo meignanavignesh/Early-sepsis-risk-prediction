@@ -1,0 +1,1167 @@
+{
+    "dataset_shape": [
+        1552210,
+        106
+    ],
+    "number_of_patients": 40336,
+    "target_distribution": {
+        "0": 1524294,
+        "1": 27916
+    },
+    "data_types": {
+        "HR": "float64",
+        "O2Sat": "float64",
+        "Temp": "float64",
+        "SBP": "float64",
+        "MAP": "float64",
+        "DBP": "float64",
+        "Resp": "float64",
+        "EtCO2": "float64",
+        "BaseExcess": "float64",
+        "HCO3": "float64",
+        "FiO2": "float64",
+        "pH": "float64",
+        "PaCO2": "float64",
+        "SaO2": "float64",
+        "AST": "float64",
+        "BUN": "float64",
+        "Alkalinephos": "float64",
+        "Calcium": "float64",
+        "Chloride": "float64",
+        "Creatinine": "float64",
+        "Bilirubin_direct": "float64",
+        "Bilirubin_total": "float64",
+        "Glucose": "float64",
+        "Lactate": "float64",
+        "Magnesium": "float64",
+        "Phosphate": "float64",
+        "Potassium": "float64",
+        "TroponinI": "float64",
+        "Hct": "float64",
+        "Hgb": "float64",
+        "PTT": "float64",
+        "WBC": "float64",
+        "Fibrinogen": "float64",
+        "Platelets": "float64",
+        "Age": "float64",
+        "Gender": "int64",
+        "Unit1": "float64",
+        "Unit2": "float64",
+        "HospAdmTime": "float64",
+        "ICULOS": "int64",
+        "SepsisLabel": "int64",
+        "Patient_ID": "str",
+        "Dataset": "str",
+        "HR_missing": "int64",
+        "HR_lag_1": "float64",
+        "HR_change_1": "float64",
+        "HR_rolling_mean_3": "float64",
+        "HR_rolling_min_3": "float64",
+        "HR_rolling_max_3": "float64",
+        "HR_rolling_mean_6": "float64",
+        "HR_rolling_min_6": "float64",
+        "HR_rolling_max_6": "float64",
+        "O2Sat_missing": "int64",
+        "O2Sat_lag_1": "float64",
+        "O2Sat_change_1": "float64",
+        "O2Sat_rolling_mean_3": "float64",
+        "O2Sat_rolling_min_3": "float64",
+        "O2Sat_rolling_max_3": "float64",
+        "O2Sat_rolling_mean_6": "float64",
+        "O2Sat_rolling_min_6": "float64",
+        "O2Sat_rolling_max_6": "float64",
+        "Temp_missing": "int64",
+        "Temp_lag_1": "float64",
+        "Temp_change_1": "float64",
+        "Temp_rolling_mean_3": "float64",
+        "Temp_rolling_min_3": "float64",
+        "Temp_rolling_max_3": "float64",
+        "Temp_rolling_mean_6": "float64",
+        "Temp_rolling_min_6": "float64",
+        "Temp_rolling_max_6": "float64",
+        "SBP_missing": "int64",
+        "SBP_lag_1": "float64",
+        "SBP_change_1": "float64",
+        "SBP_rolling_mean_3": "float64",
+        "SBP_rolling_min_3": "float64",
+        "SBP_rolling_max_3": "float64",
+        "SBP_rolling_mean_6": "float64",
+        "SBP_rolling_min_6": "float64",
+        "SBP_rolling_max_6": "float64",
+        "MAP_missing": "int64",
+        "MAP_lag_1": "float64",
+        "MAP_change_1": "float64",
+        "MAP_rolling_mean_3": "float64",
+        "MAP_rolling_min_3": "float64",
+        "MAP_rolling_max_3": "float64",
+        "MAP_rolling_mean_6": "float64",
+        "MAP_rolling_min_6": "float64",
+        "MAP_rolling_max_6": "float64",
+        "DBP_missing": "int64",
+        "DBP_lag_1": "float64",
+        "DBP_change_1": "float64",
+        "DBP_rolling_mean_3": "float64",
+        "DBP_rolling_min_3": "float64",
+        "DBP_rolling_max_3": "float64",
+        "DBP_rolling_mean_6": "float64",
+        "DBP_rolling_min_6": "float64",
+        "DBP_rolling_max_6": "float64",
+        "Resp_missing": "int64",
+        "Resp_lag_1": "float64",
+        "Resp_change_1": "float64",
+        "Resp_rolling_mean_3": "float64",
+        "Resp_rolling_min_3": "float64",
+        "Resp_rolling_max_3": "float64",
+        "Resp_rolling_mean_6": "float64",
+        "Resp_rolling_min_6": "float64",
+        "Resp_rolling_max_6": "float64"
+    },
+    "missing_values": {
+        "HR": {
+            "count": 153399,
+            "percentage": 9.8826
+        },
+        "O2Sat": {
+            "count": 202736,
+            "percentage": 13.0611
+        },
+        "Temp": {
+            "count": 1026990,
+            "percentage": 66.1631
+        },
+        "SBP": {
+            "count": 226265,
+            "percentage": 14.577
+        },
+        "MAP": {
+            "count": 193270,
+            "percentage": 12.4513
+        },
+        "DBP": {
+            "count": 486554,
+            "percentage": 31.3459
+        },
+        "Resp": {
+            "count": 238335,
+            "percentage": 15.3546
+        },
+        "EtCO2": {
+            "count": 1494574,
+            "percentage": 96.2868
+        },
+        "BaseExcess": {
+            "count": 1468065,
+            "percentage": 94.579
+        },
+        "HCO3": {
+            "count": 1487182,
+            "percentage": 95.8106
+        },
+        "FiO2": {
+            "count": 1422847,
+            "percentage": 91.6659
+        },
+        "pH": {
+            "count": 1444637,
+            "percentage": 93.0697
+        },
+        "PaCO2": {
+            "count": 1465909,
+            "percentage": 94.4401
+        },
+        "SaO2": {
+            "count": 1498649,
+            "percentage": 96.5494
+        },
+        "AST": {
+            "count": 1527027,
+            "percentage": 98.3776
+        },
+        "BUN": {
+            "count": 1445642,
+            "percentage": 93.1344
+        },
+        "Alkalinephos": {
+            "count": 1527269,
+            "percentage": 98.3932
+        },
+        "Calcium": {
+            "count": 1460879,
+            "percentage": 94.1161
+        },
+        "Chloride": {
+            "count": 1481744,
+            "percentage": 95.4603
+        },
+        "Creatinine": {
+            "count": 1457594,
+            "percentage": 93.9044
+        },
+        "Bilirubin_direct": {
+            "count": 1549220,
+            "percentage": 99.8074
+        },
+        "Bilirubin_total": {
+            "count": 1529069,
+            "percentage": 98.5092
+        },
+        "Glucose": {
+            "count": 1286694,
+            "percentage": 82.8943
+        },
+        "Lactate": {
+            "count": 1510764,
+            "percentage": 97.3299
+        },
+        "Magnesium": {
+            "count": 1454259,
+            "percentage": 93.6896
+        },
+        "Phosphate": {
+            "count": 1489909,
+            "percentage": 95.9863
+        },
+        "Potassium": {
+            "count": 1407685,
+            "percentage": 90.6891
+        },
+        "TroponinI": {
+            "count": 1537429,
+            "percentage": 99.0477
+        },
+        "Hct": {
+            "count": 1414777,
+            "percentage": 91.146
+        },
+        "Hgb": {
+            "count": 1437619,
+            "percentage": 92.6176
+        },
+        "PTT": {
+            "count": 1506511,
+            "percentage": 97.0559
+        },
+        "WBC": {
+            "count": 1452763,
+            "percentage": 93.5932
+        },
+        "Fibrinogen": {
+            "count": 1541968,
+            "percentage": 99.3402
+        },
+        "Platelets": {
+            "count": 1460001,
+            "percentage": 94.0595
+        },
+        "Age": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "Gender": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "Unit1": {
+            "count": 611960,
+            "percentage": 39.4251
+        },
+        "Unit2": {
+            "count": 611960,
+            "percentage": 39.4251
+        },
+        "HospAdmTime": {
+            "count": 8,
+            "percentage": 0.0005
+        },
+        "ICULOS": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "SepsisLabel": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "Patient_ID": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "Dataset": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "HR_missing": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "HR_lag_1": {
+            "count": 187475,
+            "percentage": 12.0779
+        },
+        "HR_change_1": {
+            "count": 263858,
+            "percentage": 16.9989
+        },
+        "HR_rolling_mean_3": {
+            "count": 58771,
+            "percentage": 3.7863
+        },
+        "HR_rolling_min_3": {
+            "count": 58771,
+            "percentage": 3.7863
+        },
+        "HR_rolling_max_3": {
+            "count": 58771,
+            "percentage": 3.7863
+        },
+        "HR_rolling_mean_6": {
+            "count": 41910,
+            "percentage": 2.7
+        },
+        "HR_rolling_min_6": {
+            "count": 41910,
+            "percentage": 2.7
+        },
+        "HR_rolling_max_6": {
+            "count": 41910,
+            "percentage": 2.7
+        },
+        "O2Sat_missing": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "O2Sat_lag_1": {
+            "count": 234939,
+            "percentage": 15.1358
+        },
+        "O2Sat_change_1": {
+            "count": 328088,
+            "percentage": 21.1368
+        },
+        "O2Sat_rolling_mean_3": {
+            "count": 81360,
+            "percentage": 5.2416
+        },
+        "O2Sat_rolling_min_3": {
+            "count": 81360,
+            "percentage": 5.2416
+        },
+        "O2Sat_rolling_max_3": {
+            "count": 81360,
+            "percentage": 5.2416
+        },
+        "O2Sat_rolling_mean_6": {
+            "count": 52389,
+            "percentage": 3.3751
+        },
+        "O2Sat_rolling_min_6": {
+            "count": 52389,
+            "percentage": 3.3751
+        },
+        "O2Sat_rolling_max_6": {
+            "count": 52389,
+            "percentage": 3.3751
+        },
+        "Temp_missing": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "Temp_lag_1": {
+            "count": 1038620,
+            "percentage": 66.9123
+        },
+        "Temp_change_1": {
+            "count": 1338185,
+            "percentage": 86.2116
+        },
+        "Temp_rolling_mean_3": {
+            "count": 474395,
+            "percentage": 30.5626
+        },
+        "Temp_rolling_min_3": {
+            "count": 474395,
+            "percentage": 30.5626
+        },
+        "Temp_rolling_max_3": {
+            "count": 474395,
+            "percentage": 30.5626
+        },
+        "Temp_rolling_mean_6": {
+            "count": 179878,
+            "percentage": 11.5885
+        },
+        "Temp_rolling_min_6": {
+            "count": 179878,
+            "percentage": 11.5885
+        },
+        "Temp_rolling_max_6": {
+            "count": 179878,
+            "percentage": 11.5885
+        },
+        "SBP_missing": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "SBP_lag_1": {
+            "count": 257135,
+            "percentage": 16.5657
+        },
+        "SBP_change_1": {
+            "count": 350014,
+            "percentage": 22.5494
+        },
+        "SBP_rolling_mean_3": {
+            "count": 108983,
+            "percentage": 7.0212
+        },
+        "SBP_rolling_min_3": {
+            "count": 108983,
+            "percentage": 7.0212
+        },
+        "SBP_rolling_max_3": {
+            "count": 108983,
+            "percentage": 7.0212
+        },
+        "SBP_rolling_mean_6": {
+            "count": 84825,
+            "percentage": 5.4648
+        },
+        "SBP_rolling_min_6": {
+            "count": 84825,
+            "percentage": 5.4648
+        },
+        "SBP_rolling_max_6": {
+            "count": 84825,
+            "percentage": 5.4648
+        },
+        "MAP_missing": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "MAP_lag_1": {
+            "count": 225541,
+            "percentage": 14.5303
+        },
+        "MAP_change_1": {
+            "count": 318322,
+            "percentage": 20.5077
+        },
+        "MAP_rolling_mean_3": {
+            "count": 77770,
+            "percentage": 5.0103
+        },
+        "MAP_rolling_min_3": {
+            "count": 77770,
+            "percentage": 5.0103
+        },
+        "MAP_rolling_max_3": {
+            "count": 77770,
+            "percentage": 5.0103
+        },
+        "MAP_rolling_mean_6": {
+            "count": 56236,
+            "percentage": 3.623
+        },
+        "MAP_rolling_min_6": {
+            "count": 56236,
+            "percentage": 3.623
+        },
+        "MAP_rolling_max_6": {
+            "count": 56236,
+            "percentage": 3.623
+        },
+        "DBP_missing": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "DBP_lag_1": {
+            "count": 510297,
+            "percentage": 32.8755
+        },
+        "DBP_change_1": {
+            "count": 578252,
+            "percentage": 37.2535
+        },
+        "DBP_rolling_mean_3": {
+            "count": 396642,
+            "percentage": 25.5534
+        },
+        "DBP_rolling_min_3": {
+            "count": 396642,
+            "percentage": 25.5534
+        },
+        "DBP_rolling_max_3": {
+            "count": 396642,
+            "percentage": 25.5534
+        },
+        "DBP_rolling_mean_6": {
+            "count": 369927,
+            "percentage": 23.8323
+        },
+        "DBP_rolling_min_6": {
+            "count": 369927,
+            "percentage": 23.8323
+        },
+        "DBP_rolling_max_6": {
+            "count": 369927,
+            "percentage": 23.8323
+        },
+        "Resp_missing": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "Resp_lag_1": {
+            "count": 270200,
+            "percentage": 17.4074
+        },
+        "Resp_change_1": {
+            "count": 374845,
+            "percentage": 24.1491
+        },
+        "Resp_rolling_mean_3": {
+            "count": 101910,
+            "percentage": 6.5655
+        },
+        "Resp_rolling_min_3": {
+            "count": 101910,
+            "percentage": 6.5655
+        },
+        "Resp_rolling_max_3": {
+            "count": 101910,
+            "percentage": 6.5655
+        },
+        "Resp_rolling_mean_6": {
+            "count": 69236,
+            "percentage": 4.4605
+        },
+        "Resp_rolling_min_6": {
+            "count": 69236,
+            "percentage": 4.4605
+        },
+        "Resp_rolling_max_6": {
+            "count": 69236,
+            "percentage": 4.4605
+        }
+    },
+    "constant_features": [],
+    "duplicate_columns": [],
+    "feature_summary": {
+        "HR": {
+            "min": 20.0,
+            "max": 280.0,
+            "mean": 84.58144338298742,
+            "median": 83.5
+        },
+        "O2Sat": {
+            "min": 20.0,
+            "max": 100.0,
+            "mean": 97.19395453339597,
+            "median": 98.0
+        },
+        "Temp": {
+            "min": 26.6,
+            "max": 42.22,
+            "mean": 36.977291763451504,
+            "median": 37.0
+        },
+        "SBP": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 123.75046539637768,
+            "median": 121.0
+        },
+        "MAP": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 82.40009988667639,
+            "median": 80.0
+        },
+        "DBP": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 63.83055577034241,
+            "median": 62.0
+        },
+        "Resp": {
+            "min": 1.0,
+            "max": 100.0,
+            "mean": 18.726497855579865,
+            "median": 18.0
+        },
+        "EtCO2": {
+            "min": 10.0,
+            "max": 100.0,
+            "mean": 32.95765667291276,
+            "median": 33.0
+        },
+        "BaseExcess": {
+            "min": -32.0,
+            "max": 100.0,
+            "mean": -0.6899191871174758,
+            "median": 0.0
+        },
+        "HCO3": {
+            "min": 0.0,
+            "max": 55.0,
+            "mean": 24.075480562219354,
+            "median": 24.0
+        },
+        "FiO2": {
+            "min": 0.0,
+            "max": 4000.0,
+            "mean": 0.555620231441757,
+            "median": 0.5
+        },
+        "pH": {
+            "min": 6.62,
+            "max": 7.93,
+            "mean": 7.378934026196165,
+            "median": 7.38
+        },
+        "PaCO2": {
+            "min": 10.0,
+            "max": 100.0,
+            "mean": 41.021868808009174,
+            "median": 40.0
+        },
+        "SaO2": {
+            "min": 23.0,
+            "max": 100.0,
+            "mean": 92.65418774854838,
+            "median": 97.0
+        },
+        "AST": {
+            "min": 3.0,
+            "max": 9961.0,
+            "mean": 260.22338482309493,
+            "median": 41.0
+        },
+        "BUN": {
+            "min": 1.0,
+            "max": 268.0,
+            "mean": 23.91545210569777,
+            "median": 17.0
+        },
+        "Alkalinephos": {
+            "min": 7.0,
+            "max": 3833.0,
+            "mean": 102.48366144100076,
+            "median": 74.0
+        },
+        "Calcium": {
+            "min": 1.0,
+            "max": 27.9,
+            "mean": 7.557530849328267,
+            "median": 8.3
+        },
+        "Chloride": {
+            "min": 26.0,
+            "max": 145.0,
+            "mean": 105.82790991400108,
+            "median": 106.0
+        },
+        "Creatinine": {
+            "min": 0.1,
+            "max": 46.6,
+            "mean": 1.5106993531749386,
+            "median": 0.94
+        },
+        "Bilirubin_direct": {
+            "min": 0.01,
+            "max": 37.5,
+            "mean": 1.8361772575250837,
+            "median": 0.445
+        },
+        "Bilirubin_total": {
+            "min": 0.1,
+            "max": 49.6,
+            "mean": 2.1140594615617303,
+            "median": 0.9
+        },
+        "Glucose": {
+            "min": 10.0,
+            "max": 988.0,
+            "mean": 136.9322832898959,
+            "median": 127.0
+        },
+        "Lactate": {
+            "min": 0.2,
+            "max": 31.0,
+            "mean": 2.6466660232591805,
+            "median": 1.8
+        },
+        "Magnesium": {
+            "min": 0.2,
+            "max": 9.8,
+            "mean": 2.05145021490337,
+            "median": 2.0
+        },
+        "Phosphate": {
+            "min": 0.2,
+            "max": 18.8,
+            "mean": 3.544237652686153,
+            "median": 3.3
+        },
+        "Potassium": {
+            "min": 1.0,
+            "max": 27.5,
+            "mean": 4.135527970939284,
+            "median": 4.1
+        },
+        "TroponinI": {
+            "min": 0.01,
+            "max": 440.0,
+            "mean": 8.290099451999188,
+            "median": 0.3
+        },
+        "Hct": {
+            "min": 5.5,
+            "max": 71.7,
+            "mean": 30.794093340027505,
+            "median": 30.3
+        },
+        "Hgb": {
+            "min": 2.2,
+            "max": 32.0,
+            "mean": 10.430832787915282,
+            "median": 10.3
+        },
+        "PTT": {
+            "min": 12.5,
+            "max": 250.0,
+            "mean": 41.23119346156371,
+            "median": 32.4
+        },
+        "WBC": {
+            "min": 0.1,
+            "max": 440.0,
+            "mean": 11.44640501975927,
+            "median": 10.3
+        },
+        "Fibrinogen": {
+            "min": 34.0,
+            "max": 1760.0,
+            "mean": 287.3857059168131,
+            "median": 250.0
+        },
+        "Platelets": {
+            "min": 1.0,
+            "max": 2322.0,
+            "mean": 196.01391078961922,
+            "median": 181.0
+        },
+        "Age": {
+            "min": 14.0,
+            "max": 100.0,
+            "mean": 62.00946887985517,
+            "median": 64.0
+        },
+        "Gender": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.5592690422043409,
+            "median": 1.0
+        },
+        "Unit1": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.49657112470087744,
+            "median": 0.0
+        },
+        "Unit2": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.5034288752991226,
+            "median": 1.0
+        },
+        "HospAdmTime": {
+            "min": -5366.86,
+            "max": 23.99,
+            "mean": -56.125121768945014,
+            "median": -6.03
+        },
+        "ICULOS": {
+            "min": 1.0,
+            "max": 336.0,
+            "mean": 26.994992301299437,
+            "median": 21.0
+        },
+        "HR_missing": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.09882618975525219,
+            "median": 0.0
+        },
+        "HR_lag_1": {
+            "min": 20.0,
+            "max": 280.0,
+            "mean": 84.59313192671105,
+            "median": 83.5
+        },
+        "HR_change_1": {
+            "min": -165.0,
+            "max": 169.0,
+            "mean": -0.048140220995504336,
+            "median": 0.0
+        },
+        "HR_rolling_mean_3": {
+            "min": 20.0,
+            "max": 221.0,
+            "mean": 84.48182742984481,
+            "median": 83.33333333333333
+        },
+        "HR_rolling_min_3": {
+            "min": 20.0,
+            "max": 219.0,
+            "mean": 81.04668607154359,
+            "median": 80.0
+        },
+        "HR_rolling_max_3": {
+            "min": 20.0,
+            "max": 280.0,
+            "mean": 88.12907303210912,
+            "median": 87.0
+        },
+        "HR_rolling_mean_6": {
+            "min": 20.0,
+            "max": 192.6,
+            "mean": 84.4567203673663,
+            "median": 83.4
+        },
+        "HR_rolling_min_6": {
+            "min": 20.0,
+            "max": 184.0,
+            "mean": 78.77587999073032,
+            "median": 78.0
+        },
+        "HR_rolling_max_6": {
+            "min": 20.0,
+            "max": 280.0,
+            "mean": 90.94061901608953,
+            "median": 90.0
+        },
+        "O2Sat_missing": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.13061119307310223,
+            "median": 0.0
+        },
+        "O2Sat_lag_1": {
+            "min": 20.0,
+            "max": 100.0,
+            "mean": 97.20392736194754,
+            "median": 98.0
+        },
+        "O2Sat_change_1": {
+            "min": -80.0,
+            "max": 80.0,
+            "mean": -0.037340477501425516,
+            "median": 0.0
+        },
+        "O2Sat_rolling_mean_3": {
+            "min": 20.0,
+            "max": 100.0,
+            "mean": 97.19926481286329,
+            "median": 97.66666666666669
+        },
+        "O2Sat_rolling_min_3": {
+            "min": 20.0,
+            "max": 100.0,
+            "mean": 96.23693354182954,
+            "median": 97.0
+        },
+        "O2Sat_rolling_max_3": {
+            "min": 20.0,
+            "max": 100.0,
+            "mean": 98.06119957847504,
+            "median": 99.0
+        },
+        "O2Sat_rolling_mean_6": {
+            "min": 20.0,
+            "max": 100.0,
+            "mean": 97.23415735833365,
+            "median": 97.5
+        },
+        "O2Sat_rolling_min_6": {
+            "min": 20.0,
+            "max": 100.0,
+            "mean": 95.51113699568148,
+            "median": 96.0
+        },
+        "O2Sat_rolling_max_6": {
+            "min": 20.0,
+            "max": 100.0,
+            "mean": 98.53082694534882,
+            "median": 99.0
+        },
+        "Temp_missing": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.6616308360337841,
+            "median": 1.0
+        },
+        "Temp_lag_1": {
+            "min": 26.6,
+            "max": 42.22,
+            "mean": 36.97715420860998,
+            "median": 37.0
+        },
+        "Temp_change_1": {
+            "min": -11.199999999999996,
+            "max": 11.07,
+            "mean": 0.04268029435813573,
+            "median": 0.0
+        },
+        "Temp_rolling_mean_3": {
+            "min": 26.67,
+            "max": 42.1,
+            "mean": 36.899510795761174,
+            "median": 36.89
+        },
+        "Temp_rolling_min_3": {
+            "min": 26.6,
+            "max": 42.1,
+            "mean": 36.8607452670449,
+            "median": 36.83
+        },
+        "Temp_rolling_max_3": {
+            "min": 26.67,
+            "max": 42.22,
+            "mean": 36.937755523907164,
+            "median": 36.9
+        },
+        "Temp_rolling_mean_6": {
+            "min": 26.67,
+            "max": 42.095,
+            "mean": 36.86641414844708,
+            "median": 36.83
+        },
+        "Temp_rolling_min_6": {
+            "min": 26.6,
+            "max": 42.0,
+            "mean": 36.735711628089994,
+            "median": 36.7
+        },
+        "Temp_rolling_max_6": {
+            "min": 26.67,
+            "max": 42.22,
+            "mean": 36.99285143099483,
+            "median": 36.94
+        },
+        "SBP_missing": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.1457695801470162,
+            "median": 0.0
+        },
+        "SBP_lag_1": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 123.7306368357045,
+            "median": 121.0
+        },
+        "SBP_change_1": {
+            "min": -225.0,
+            "max": 198.0,
+            "mean": -0.10653178017561195,
+            "median": 0.0
+        },
+        "SBP_rolling_mean_3": {
+            "min": 20.0,
+            "max": 291.0,
+            "mean": 123.83415646441388,
+            "median": 121.33333333333331
+        },
+        "SBP_rolling_min_3": {
+            "min": 20.0,
+            "max": 288.0,
+            "mean": 116.4027282610428,
+            "median": 114.0
+        },
+        "SBP_rolling_max_3": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 131.3988046925397,
+            "median": 129.0
+        },
+        "SBP_rolling_mean_6": {
+            "min": 25.0,
+            "max": 282.0,
+            "mean": 123.82437118638485,
+            "median": 121.41666666666669
+        },
+        "SBP_rolling_min_6": {
+            "min": 20.0,
+            "max": 282.0,
+            "mean": 111.73236596394266,
+            "median": 109.0
+        },
+        "SBP_rolling_max_6": {
+            "min": 25.0,
+            "max": 300.0,
+            "mean": 136.42258121079337,
+            "median": 134.0
+        },
+        "MAP_missing": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.12451279143930268,
+            "median": 0.0
+        },
+        "MAP_lag_1": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 82.38850123881691,
+            "median": 80.0
+        },
+        "MAP_change_1": {
+            "min": -240.0,
+            "max": 237.0,
+            "mean": -0.10225544782022356,
+            "median": 0.0
+        },
+        "MAP_rolling_mean_3": {
+            "min": 20.0,
+            "max": 298.0,
+            "mean": 82.60341257923913,
+            "median": 80.66666666666667
+        },
+        "MAP_rolling_min_3": {
+            "min": 20.0,
+            "max": 298.0,
+            "mean": 77.38772866986788,
+            "median": 76.0
+        },
+        "MAP_rolling_max_3": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 88.07607004015084,
+            "median": 86.0
+        },
+        "MAP_rolling_mean_6": {
+            "min": 20.0,
+            "max": 281.0,
+            "mean": 82.68585796087811,
+            "median": 80.83333333333333
+        },
+        "MAP_rolling_min_6": {
+            "min": 20.0,
+            "max": 281.0,
+            "mean": 74.35496562106026,
+            "median": 72.67
+        },
+        "MAP_rolling_max_6": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 92.00217579316218,
+            "median": 90.0
+        },
+        "DBP_missing": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.3134588747656567,
+            "median": 0.0
+        },
+        "DBP_lag_1": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 63.80388437422318,
+            "median": 62.0
+        },
+        "DBP_change_1": {
+            "min": -244.0,
+            "max": 248.0,
+            "mean": -0.06811592491668018,
+            "median": 0.0
+        },
+        "DBP_rolling_mean_3": {
+            "min": 20.0,
+            "max": 298.0,
+            "mean": 64.07787211858873,
+            "median": 62.66666666666666
+        },
+        "DBP_rolling_min_3": {
+            "min": 20.0,
+            "max": 298.0,
+            "mean": 59.811619999861534,
+            "median": 58.0
+        },
+        "DBP_rolling_max_3": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 68.6351521935533,
+            "median": 67.0
+        },
+        "DBP_rolling_mean_6": {
+            "min": 20.0,
+            "max": 298.0,
+            "mean": 64.15790873730457,
+            "median": 62.8
+        },
+        "DBP_rolling_min_6": {
+            "min": 20.0,
+            "max": 298.0,
+            "mean": 57.486185481817806,
+            "median": 56.0
+        },
+        "DBP_rolling_max_6": {
+            "min": 20.0,
+            "max": 300.0,
+            "mean": 71.95315906597658,
+            "median": 70.0
+        },
+        "Resp_missing": {
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.15354558983642677,
+            "median": 0.0
+        },
+        "Resp_lag_1": {
+            "min": 1.0,
+            "max": 100.0,
+            "mean": 18.716752888042993,
+            "median": 18.0
+        },
+        "Resp_change_1": {
+            "min": -88.0,
+            "max": 90.0,
+            "mean": 0.038062427539463116,
+            "median": 0.0
+        },
+        "Resp_rolling_mean_3": {
+            "min": 1.0,
+            "max": 100.0,
+            "mean": 18.6877288871268,
+            "median": 18.0
+        },
+        "Resp_rolling_min_3": {
+            "min": 1.0,
+            "max": 100.0,
+            "mean": 16.904450155140317,
+            "median": 16.0
+        },
+        "Resp_rolling_max_3": {
+            "min": 1.0,
+            "max": 100.0,
+            "mean": 20.552435130662623,
+            "median": 20.0
+        },
+        "Resp_rolling_mean_6": {
+            "min": 1.0,
+            "max": 100.0,
+            "mean": 18.627691511449292,
+            "median": 18.166666666666668
+        },
+        "Resp_rolling_min_6": {
+            "min": 1.0,
+            "max": 100.0,
+            "mean": 15.83468410774565,
+            "median": 16.0
+        },
+        "Resp_rolling_max_6": {
+            "min": 1.0,
+            "max": 100.0,
+            "mean": 21.754590970576693,
+            "median": 21.0
+        }
+    }
+}

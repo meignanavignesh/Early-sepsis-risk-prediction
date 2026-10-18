@@ -1,0 +1,31 @@
+{
+    "evaluation_type": "patient_level",
+    "threshold": 0.55,
+    "total_patients": 6051,
+    "actual_sepsis_patients": 440,
+    "actual_non_sepsis_patients": 5611,
+    "predicted_sepsis_patients": 2359,
+    "predicted_non_sepsis_patients": 3692,
+    "accuracy": 0.6620393323417617,
+    "precision": 0.15981348028825773,
+    "recall": 0.8568181818181818,
+    "f1_score": 0.2693819221150411,
+    "confusion_matrix": [
+        [
+            3629,
+            1982
+        ],
+        [
+            63,
+            377
+        ]
+    ],
+    "true_negatives": 3629,
+    "false_positives": 1982,
+    "false_negatives": 63,
+    "true_positives": 377,
+    "aggregation_method": "maximum predicted probability across patient observations",
+    "actual_patient_label_method": "patient considered positive if at least one observation has SepsisLabel=1",
+    "patient_leakage": false,
+    "output": "data\\processed\\patient_level_predictions.csv"
+}

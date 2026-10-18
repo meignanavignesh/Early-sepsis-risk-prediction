@@ -1,0 +1,48 @@
+{
+    "input_shapes": {
+        "train": [
+            1086436,
+            106
+        ],
+        "validation": [
+            231472,
+            106
+        ],
+        "test": [
+            234302,
+            106
+        ]
+    },
+    "output_shapes": {
+        "train": [
+            1086436,
+            199
+        ],
+        "validation": [
+            231472,
+            199
+        ],
+        "test": [
+            234302,
+            199
+        ]
+    },
+    "columns_identical_across_splits": true,
+    "numeric_feature_count": 103,
+    "categorical_feature_count": 0,
+    "missing_indicator_count": 93,
+    "missing_values_before": {
+        "train": 39408486,
+        "validation": 8381345,
+        "test": 8460799
+    },
+    "missing_numeric_values_after": {
+        "train": 0,
+        "validation": 0,
+        "test": 0
+    },
+    "imputation_method": "Training-set median",
+    "fit_statistics_source": "train_only",
+    "data_leakage_prevented": true,
+    "target_used_for_imputation": false
+}

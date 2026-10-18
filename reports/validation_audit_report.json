@@ -1,0 +1,43 @@
+{
+    "patient_overlap": {
+        "train_vs_validation": {
+            "overlap_count": 0,
+            "has_overlap": false
+        },
+        "test_vs_train": {
+            "overlap_count": 0,
+            "has_overlap": false
+        },
+        "test_vs_validation": {
+            "overlap_count": 0,
+            "has_overlap": false
+        }
+    },
+    "split_summary": {
+        "train": {
+            "rows": 1086436,
+            "patients": 28235,
+            "positive_rows": 19560,
+            "positive_patients": 2052,
+            "patient_positive_rate": 0.07267575703913583
+        },
+        "validation": {
+            "rows": 231472,
+            "patients": 6050,
+            "positive_rows": 4162,
+            "positive_patients": 440,
+            "patient_positive_rate": 0.07272727272727272
+        },
+        "test": {
+            "rows": 234302,
+            "patients": 6051,
+            "positive_rows": 4194,
+            "positive_patients": 440,
+            "patient_positive_rate": 0.07271525367707816
+        }
+    },
+    "target_leakage_columns": [],
+    "future_looking_feature_flags": [],
+    "patient_level_splits": true,
+    "data_leakage_prevented": true
+}

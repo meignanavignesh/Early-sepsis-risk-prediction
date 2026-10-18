@@ -1,0 +1,4 @@
+run_id,model_name,feature_count,primary_metric,run_path
+20260915_162426_124557,xgboost,196,0.4321475625823452,reports\experiments\20260915_162426_124557.json
+20260915_162557_464606,xgboost,,0.8113636363636364,reports\experiments\20260915_162557_464606.json
+20260928_103705_423776,xgboost_optimized,196,,reports\experiments\20260928_103705_423776.json

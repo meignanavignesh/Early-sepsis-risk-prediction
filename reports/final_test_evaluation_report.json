@@ -1,0 +1,66 @@
+{
+    "evaluation_type": "Final evaluation on untouched test set",
+    "model": "XGBoost",
+    "model_path": "models\\xgboost_optimized.pkl",
+    "test_path": "data\\processed\\model_ready\\test.csv",
+    "threshold": 0.4,
+    "test_set_used_for_training": false,
+    "test_set_used_for_threshold_selection": false,
+    "data_leakage_prevented": true,
+    "test_rows": 234302,
+    "test_patients": 6051,
+    "sepsis_patients": 440,
+    "non_sepsis_patients": 5611,
+    "number_of_features": 196,
+    "metrics": {
+        "accuracy": 0.8712644364964874,
+        "precision": 0.079340395892053,
+        "recall": 0.583929422985217,
+        "f1_score": 0.13969938107869143,
+        "roc_auc": 0.8306559916933617,
+        "pr_auc": 0.13001822090872553,
+        "sensitivity": 0.583929422985217,
+        "specificity": 0.8765014688754845
+    },
+    "confusion_matrix": [
+        [
+            201690,
+            28418
+        ],
+        [
+            1745,
+            2449
+        ]
+    ],
+    "true_negative": 201690,
+    "false_positive": 28418,
+    "false_negative": 1745,
+    "true_positive": 2449,
+    "classification_report": {
+        "0": {
+            "precision": 0.9914223216260722,
+            "recall": 0.8765014688754845,
+            "f1-score": 0.9304267396774945,
+            "support": 230108.0
+        },
+        "1": {
+            "precision": 0.079340395892053,
+            "recall": 0.583929422985217,
+            "f1-score": 0.13969938107869143,
+            "support": 4194.0
+        },
+        "accuracy": 0.8712644364964874,
+        "macro avg": {
+            "precision": 0.5353813587590626,
+            "recall": 0.7302154459303507,
+            "f1-score": 0.5350630603780929,
+            "support": 234302.0
+        },
+        "weighted avg": {
+            "precision": 0.9750960777334531,
+            "recall": 0.8712644364964874,
+            "f1-score": 0.9162727395325388,
+            "support": 234302.0
+        }
+    }
+}

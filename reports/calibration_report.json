@@ -1,0 +1,35 @@
+{
+    "evaluation_type": "probability_calibration",
+    "dataset": "data\\processed\\model_ready\\test.csv",
+    "rows": 234302,
+    "brier_score": 0.1279456466436386,
+    "expected_calibration_error": 0.27974007574682247,
+    "calibration_curve": {
+        "mean_predicted_probability": [
+            0.06570505521452064,
+            0.10772354452530136,
+            0.14052659335188056,
+            0.17403309519569232,
+            0.213024985074768,
+            0.26013853126453934,
+            0.32096951730705153,
+            0.4050809227995419,
+            0.530570956204775,
+            0.7586175832973899
+        ],
+        "fraction_positive": [
+            0.001835175622039179,
+            0.0019206145966709346,
+            0.002603499786598378,
+            0.0046094750320102434,
+            0.00597524541186513,
+            0.009517712334613742,
+            0.013145539906103286,
+            0.01685872812633376,
+            0.029833546734955186,
+            0.0926977081643976
+        ]
+    },
+    "bins_csv": "reports\\calibration_bins.csv",
+    "calibration_note": "Optional Platt scaling or isotonic calibration should be fit on validation data before final test use."
+}

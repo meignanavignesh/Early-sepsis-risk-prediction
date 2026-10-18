@@ -1,0 +1,72 @@
+{
+  "selection_data": "validation_only",
+  "test_set_loaded": false,
+  "base_scale_pos_weight": 54.543762781186096,
+  "thresholds_tested": [
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "consecutive_options_tested": [
+    1,
+    2,
+    3
+  ],
+  "recall_constraint": 0.8,
+  "configurations_tested": 24,
+  "eligible_configurations": 6,
+  "models_tested": {
+    "xgboost_scale_factor_1.00": {
+      "path": "models\\xgboost.pkl",
+      "scale_pos_weight": 54.543762781186096,
+      "scale_factor_from_training_ratio": 1.0
+    },
+    "xgboost_scale_factor_0.50": {
+      "path": "models\\xgboost_optimized.pkl",
+      "scale_pos_weight": 27.271881390593048,
+      "scale_factor_from_training_ratio": 0.5
+    }
+  },
+  "best_with_recall_constraint": {
+    "model": "xgboost_scale_factor_1.00",
+    "model_path": "models\\xgboost.pkl",
+    "scale_pos_weight": 54.543762781186096,
+    "scale_factor": 1.0,
+    "threshold": 0.5,
+    "required_consecutive": 2,
+    "validation_accuracy": 0.6960330578512397,
+    "validation_precision": 0.16769596199524942,
+    "validation_recall": 0.8022727272727272,
+    "validation_f1": 0.2774066797642436,
+    "validation_specificity": 0.6877005347593583,
+    "validation_roc_auc": 0.8365396613190732,
+    "validation_pr_auc": 0.44950240107897615,
+    "false_alerts_per_icu_stay": 10.168092691622103,
+    "true_positives": 353,
+    "false_positives": 1752,
+    "false_negatives": 87,
+    "true_negatives": 3858
+  },
+  "best_unconstrained_f1": {
+    "model": "xgboost_scale_factor_0.50",
+    "model_path": "models\\xgboost_optimized.pkl",
+    "scale_pos_weight": 27.271881390593048,
+    "scale_factor": 0.5,
+    "threshold": 0.7,
+    "required_consecutive": 2,
+    "validation_accuracy": 0.9327272727272727,
+    "validation_precision": 0.5591397849462365,
+    "validation_recall": 0.35454545454545455,
+    "validation_f1": 0.4339360222531293,
+    "validation_specificity": 0.9780748663101604,
+    "validation_roc_auc": 0.8394115621455194,
+    "validation_pr_auc": 0.44929556752964983,
+    "false_alerts_per_icu_stay": 0.777361853832442,
+    "true_positives": 156,
+    "false_positives": 123,
+    "false_negatives": 284,
+    "true_negatives": 5487
+  },
+  "results_path": "reports\\joint_scale_threshold_results.csv"
+}

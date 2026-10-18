@@ -1,0 +1,120 @@
+{
+  "pipeline": "isolated paper-style experiment",
+  "paper_features": [
+    "ICULOS",
+    "Unit1",
+    "Unit2",
+    "BUN",
+    "HR",
+    "Resp",
+    "Gender",
+    "Bilirubin_direct",
+    "Bilirubin_total",
+    "Creatinine",
+    "EtCO2",
+    "Hct",
+    "Hgb",
+    "WBC",
+    "Fibrinogen",
+    "Temp",
+    "MAP",
+    "DBP",
+    "Calcium",
+    "PTT",
+    "Glucose",
+    "SBP",
+    "BaseExcess",
+    "Platelets",
+    "Magnesium",
+    "HCO3",
+    "AST",
+    "HospAdmTime"
+  ],
+  "feature_count": 28,
+  "raw_rows": 1552210,
+  "raw_patients": 40336,
+  "split_patients": {
+    "train": 30252,
+    "validation": 5042,
+    "test": 5042
+  },
+  "balancing": {
+    "method": "random undersampling to 4:1 followed by SMOTE",
+    "before": [
+      1147133,
+      20816
+    ],
+    "after_undersampling": [
+      83264,
+      20816
+    ],
+    "after_smote": [
+      83264,
+      83264
+    ]
+  },
+  "validation_row_level": {
+    "accuracy": 0.955840514788798,
+    "precision": 0.15837937384898712,
+    "recall": 0.30102315562735593,
+    "f1": 0.20755592685417246,
+    "specificity": 0.9686669338846462,
+    "roc_auc": 0.8262124753114195,
+    "pr_auc": 0.10954471423951416,
+    "tp": 1118,
+    "tn": 183667,
+    "fp": 5941,
+    "fn": 2596,
+    "rows": 193322,
+    "positive_rows": 3714
+  },
+  "test_row_level": {
+    "accuracy": 0.9602281356873138,
+    "precision": 0.13535528596187174,
+    "recall": 0.23065564087418783,
+    "f1": 0.1705985146352119,
+    "specificity": 0.9733995190692765,
+    "roc_auc": 0.8266275008182055,
+    "pr_auc": 0.08925982296772818,
+    "tp": 781,
+    "tn": 182564,
+    "fp": 4989,
+    "fn": 2605,
+    "rows": 190939,
+    "positive_rows": 3386
+  },
+  "validation_patient_level": {
+    "accuracy": 0.9200714002380008,
+    "precision": 0.4801223241590214,
+    "recall": 0.4025641025641026,
+    "f1": 0.43793584379358436,
+    "specificity": 0.9634565778159931,
+    "roc_auc": 0.8264826818352183,
+    "pr_auc": 0.4121519672036577,
+    "tp": 157,
+    "tn": 4482,
+    "fp": 170,
+    "fn": 233,
+    "patients": 5042,
+    "positive_patients": 390
+  },
+  "test_patient_level": {
+    "accuracy": 0.9186830622768742,
+    "precision": 0.4070175438596491,
+    "recall": 0.32492997198879553,
+    "f1": 0.3613707165109034,
+    "specificity": 0.9639274279615795,
+    "roc_auc": 0.8145855567413731,
+    "pr_auc": 0.30193938878679594,
+    "tp": 116,
+    "tn": 4516,
+    "fp": 169,
+    "fn": 241,
+    "patients": 5042,
+    "positive_patients": 357
+  },
+  "training_minutes": 0.879,
+  "production_modified": false,
+  "test_used_for_training_or_selection": false,
+  "note": "Row-level metrics are the closest comparison to the reference paper. Patient-level metrics are included because production uses patient-level evaluation."
+}

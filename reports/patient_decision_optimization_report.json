@@ -1,0 +1,31 @@
+{
+    "dataset": "validation",
+    "validation_patients": 6050,
+    "optimization_metric": "F1-score",
+    "recall_target": 0.8,
+    "best_overall_strategy": {
+        "strategy": "at_least_2_positive_observations",
+        "threshold": 0.8,
+        "accuracy": 0.9247933884297521,
+        "precision": 0.4788732394366197,
+        "recall": 0.38636363636363635,
+        "f1_score": 0.4276729559748428,
+        "predicted_positive_patients": 355,
+        "false_positive_patients": 185,
+        "false_negative_patients": 270
+    },
+    "best_strategy_with_recall_at_least_80_percent": {
+        "strategy": "2_consecutive_observations",
+        "threshold": 0.5,
+        "accuracy": 0.6960330578512397,
+        "precision": 0.16769596199524942,
+        "recall": 0.8022727272727272,
+        "f1_score": 0.2774066797642436,
+        "predicted_positive_patients": 2105,
+        "false_positive_patients": 1752,
+        "false_negative_patients": 87
+    },
+    "test_set_used": false,
+    "data_leakage_prevented": true,
+    "results_table": "reports\\patient_decision_results.csv"
+}

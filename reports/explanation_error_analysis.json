@@ -1,0 +1,24 @@
+{
+    "total_patients": 6051,
+    "threshold": 0.5,
+    "top_global_features_used": [
+        "ICULOS",
+        "HospAdmTime",
+        "Temp_rolling_max_6",
+        "Unit1",
+        "FiO2_was_missing",
+        "HR_rolling_max_6",
+        "Age",
+        "EtCO2_was_missing",
+        "MAP_rolling_min_6",
+        "Unit1_was_missing"
+    ],
+    "outcome_counts": {
+        "true_negative": 3212,
+        "false_positive": 2399,
+        "true_positive": 386,
+        "false_negative": 54
+    },
+    "output_csv": "reports\\patient_explanations.csv",
+    "note": "Top feature names come from global SHAP importance when available. Per-patient SHAP can be added later for exact local attribution."
+}

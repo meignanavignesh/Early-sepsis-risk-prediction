@@ -1,0 +1,31 @@
+{
+  "method": "training-only random undersampling to 1:1",
+  "threshold": 0.4600000000000001,
+  "validation_metrics": {
+    "accuracy": 0.7672850279947466,
+    "precision": 0.05339011986270598,
+    "recall": 0.7138395002402691,
+    "f1": 0.09934959621461653,
+    "pr_auc": 0.09027253409174515,
+    "confusion": [
+      174634,
+      52676,
+      1191,
+      2971
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.7667113383581873,
+    "precision": 0.054926447243094506,
+    "recall": 0.7424892703862661,
+    "f1": 0.10228616476152937,
+    "pr_auc": 0.13760932673989754,
+    "confusion": [
+      176528,
+      53580,
+      1080,
+      3114
+    ]
+  },
+  "model_path": "e:\\Earlysepsispredicton\\models\\experiments\\xgboost_balanced_training.pkl"
+}

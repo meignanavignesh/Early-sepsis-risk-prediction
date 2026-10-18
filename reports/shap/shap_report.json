@@ -1,0 +1,100 @@
+{
+    "model": "XGBoost",
+    "model_path": "models\\xgboost.pkl",
+    "test_dataset": "data\\processed\\model_ready\\test.csv",
+    "total_test_observations": 234302,
+    "shap_sample_size": 5000,
+    "shap_positive_observations": 2500,
+    "shap_negative_observations": 2500,
+    "number_of_features": 196,
+    "top_20_features": [
+        {
+            "feature": "ICULOS",
+            "mean_absolute_shap": 0.7013899087905884
+        },
+        {
+            "feature": "HospAdmTime",
+            "mean_absolute_shap": 0.27992114424705505
+        },
+        {
+            "feature": "Temp_rolling_max_6",
+            "mean_absolute_shap": 0.187947079539299
+        },
+        {
+            "feature": "Unit1",
+            "mean_absolute_shap": 0.10743673145771027
+        },
+        {
+            "feature": "FiO2_was_missing",
+            "mean_absolute_shap": 0.09083398431539536
+        },
+        {
+            "feature": "HR_rolling_max_6",
+            "mean_absolute_shap": 0.0902264267206192
+        },
+        {
+            "feature": "Age",
+            "mean_absolute_shap": 0.08882102370262146
+        },
+        {
+            "feature": "EtCO2_was_missing",
+            "mean_absolute_shap": 0.08667176216840744
+        },
+        {
+            "feature": "MAP_rolling_min_6",
+            "mean_absolute_shap": 0.0793711245059967
+        },
+        {
+            "feature": "Unit1_was_missing",
+            "mean_absolute_shap": 0.07816805690526962
+        },
+        {
+            "feature": "O2Sat_rolling_min_6",
+            "mean_absolute_shap": 0.07339879870414734
+        },
+        {
+            "feature": "SBP_rolling_min_6",
+            "mean_absolute_shap": 0.07139363139867783
+        },
+        {
+            "feature": "Resp_rolling_mean_6",
+            "mean_absolute_shap": 0.06560827791690826
+        },
+        {
+            "feature": "Gender",
+            "mean_absolute_shap": 0.053251493722200394
+        },
+        {
+            "feature": "HR_rolling_max_3",
+            "mean_absolute_shap": 0.05279768630862236
+        },
+        {
+            "feature": "Temp_rolling_mean_6",
+            "mean_absolute_shap": 0.048844195902347565
+        },
+        {
+            "feature": "Resp_rolling_min_6",
+            "mean_absolute_shap": 0.04443468153476715
+        },
+        {
+            "feature": "MAP_rolling_min_3",
+            "mean_absolute_shap": 0.03721319139003754
+        },
+        {
+            "feature": "HR_rolling_min_6",
+            "mean_absolute_shap": 0.03402123227715492
+        },
+        {
+            "feature": "Lactate_was_missing",
+            "mean_absolute_shap": 0.033176179975271225
+        }
+    ],
+    "explanation_type": "TreeSHAP global feature importance plus individual observation explanation",
+    "test_predictions_used_for_model_training": false,
+    "data_leakage_prevented": true,
+    "outputs": {
+        "shap_values": "reports\\shap\\shap_values.csv",
+        "global_feature_importance": "reports\\shap\\global_feature_importance.csv",
+        "individual_explanation": "reports\\shap\\individual_explanation.csv"
+    }
+}

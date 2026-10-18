@@ -1,0 +1,478 @@
+{
+    "dataset_shape": [
+        1552210,
+        43
+    ],
+    "columns_and_dtypes": {
+        "HR": "float64",
+        "O2Sat": "float64",
+        "Temp": "float64",
+        "SBP": "float64",
+        "MAP": "float64",
+        "DBP": "float64",
+        "Resp": "float64",
+        "EtCO2": "float64",
+        "BaseExcess": "float64",
+        "HCO3": "float64",
+        "FiO2": "float64",
+        "pH": "float64",
+        "PaCO2": "float64",
+        "SaO2": "float64",
+        "AST": "float64",
+        "BUN": "float64",
+        "Alkalinephos": "float64",
+        "Calcium": "float64",
+        "Chloride": "float64",
+        "Creatinine": "float64",
+        "Bilirubin_direct": "float64",
+        "Glucose": "float64",
+        "Lactate": "float64",
+        "Magnesium": "float64",
+        "Phosphate": "float64",
+        "Potassium": "float64",
+        "Bilirubin_total": "float64",
+        "TroponinI": "float64",
+        "Hct": "float64",
+        "Hgb": "float64",
+        "PTT": "float64",
+        "WBC": "float64",
+        "Fibrinogen": "float64",
+        "Platelets": "float64",
+        "Age": "float64",
+        "Gender": "int64",
+        "Unit1": "float64",
+        "Unit2": "float64",
+        "HospAdmTime": "float64",
+        "ICULOS": "int64",
+        "SepsisLabel": "int64",
+        "Patient_ID": "str",
+        "Dataset": "str"
+    },
+    "missing_value_count": {
+        "HR": 153399,
+        "O2Sat": 202736,
+        "Temp": 1026984,
+        "SBP": 226265,
+        "MAP": 193270,
+        "DBP": 486554,
+        "Resp": 238335,
+        "EtCO2": 1494574,
+        "BaseExcess": 1468065,
+        "HCO3": 1487182,
+        "FiO2": 1422845,
+        "pH": 1444637,
+        "PaCO2": 1465909,
+        "SaO2": 1498649,
+        "AST": 1527027,
+        "BUN": 1445642,
+        "Alkalinephos": 1527269,
+        "Calcium": 1460879,
+        "Chloride": 1481744,
+        "Creatinine": 1457594,
+        "Bilirubin_direct": 1549220,
+        "Glucose": 1286694,
+        "Lactate": 1510764,
+        "Magnesium": 1454259,
+        "Phosphate": 1489909,
+        "Potassium": 1407685,
+        "Bilirubin_total": 1529069,
+        "TroponinI": 1537429,
+        "Hct": 1414777,
+        "Hgb": 1437619,
+        "PTT": 1506511,
+        "WBC": 1452763,
+        "Fibrinogen": 1541968,
+        "Platelets": 1460001,
+        "Age": 0,
+        "Gender": 0,
+        "Unit1": 611960,
+        "Unit2": 611960,
+        "HospAdmTime": 8,
+        "ICULOS": 0,
+        "SepsisLabel": 0
+    },
+    "missing_value_percentage": {
+        "HR": 9.8826,
+        "O2Sat": 13.0611,
+        "Temp": 66.1627,
+        "SBP": 14.577,
+        "MAP": 12.4513,
+        "DBP": 31.3459,
+        "Resp": 15.3546,
+        "EtCO2": 96.2868,
+        "BaseExcess": 94.579,
+        "HCO3": 95.8106,
+        "FiO2": 91.6658,
+        "pH": 93.0697,
+        "PaCO2": 94.4401,
+        "SaO2": 96.5494,
+        "AST": 98.3776,
+        "BUN": 93.1344,
+        "Alkalinephos": 98.3932,
+        "Calcium": 94.1161,
+        "Chloride": 95.4603,
+        "Creatinine": 93.9044,
+        "Bilirubin_direct": 99.8074,
+        "Glucose": 82.8943,
+        "Lactate": 97.3299,
+        "Magnesium": 93.6896,
+        "Phosphate": 95.9863,
+        "Potassium": 90.6891,
+        "Bilirubin_total": 98.5092,
+        "TroponinI": 99.0477,
+        "Hct": 91.146,
+        "Hgb": 92.6176,
+        "PTT": 97.0559,
+        "WBC": 93.5932,
+        "Fibrinogen": 99.3402,
+        "Platelets": 94.0595,
+        "Age": 0.0,
+        "Gender": 0.0,
+        "Unit1": 39.4251,
+        "Unit2": 39.4251,
+        "HospAdmTime": 0.0005,
+        "ICULOS": 0.0,
+        "SepsisLabel": 0.0
+    },
+    "unique_value_count": {
+        "HR": 343,
+        "O2Sat": 145,
+        "Temp": 641,
+        "SBP": 990,
+        "MAP": 945,
+        "DBP": 678,
+        "Resp": 235,
+        "EtCO2": 139,
+        "BaseExcess": 407,
+        "HCO3": 304,
+        "FiO2": 104,
+        "pH": 103,
+        "PaCO2": 551,
+        "SaO2": 432,
+        "AST": 2025,
+        "BUN": 265,
+        "Alkalinephos": 752,
+        "Calcium": 549,
+        "Chloride": 108,
+        "Creatinine": 1407,
+        "Bilirubin_direct": 280,
+        "Glucose": 1157,
+        "Lactate": 1340,
+        "Magnesium": 110,
+        "Phosphate": 193,
+        "Potassium": 402,
+        "Bilirubin_total": 407,
+        "TroponinI": 2423,
+        "Hct": 725,
+        "Hgb": 340,
+        "PTT": 1410,
+        "WBC": 891,
+        "Fibrinogen": 823,
+        "Platelets": 989,
+        "Age": 5987,
+        "Gender": 2,
+        "Unit1": 2,
+        "Unit2": 2,
+        "HospAdmTime": 12156,
+        "ICULOS": 336,
+        "SepsisLabel": 2,
+        "Patient_ID": 40336,
+        "Dataset": 2
+    },
+    "numerical_min_max": {
+        "HR": {
+            "min": 20.0,
+            "max": 280.0
+        },
+        "O2Sat": {
+            "min": 20.0,
+            "max": 100.0
+        },
+        "Temp": {
+            "min": 20.9,
+            "max": 50.0
+        },
+        "SBP": {
+            "min": 20.0,
+            "max": 300.0
+        },
+        "MAP": {
+            "min": 20.0,
+            "max": 300.0
+        },
+        "DBP": {
+            "min": 20.0,
+            "max": 300.0
+        },
+        "Resp": {
+            "min": 1.0,
+            "max": 100.0
+        },
+        "EtCO2": {
+            "min": 10.0,
+            "max": 100.0
+        },
+        "BaseExcess": {
+            "min": -32.0,
+            "max": 100.0
+        },
+        "HCO3": {
+            "min": 0.0,
+            "max": 55.0
+        },
+        "FiO2": {
+            "min": -50.0,
+            "max": 4000.0
+        },
+        "pH": {
+            "min": 6.62,
+            "max": 7.93
+        },
+        "PaCO2": {
+            "min": 10.0,
+            "max": 100.0
+        },
+        "SaO2": {
+            "min": 23.0,
+            "max": 100.0
+        },
+        "AST": {
+            "min": 3.0,
+            "max": 9961.0
+        },
+        "BUN": {
+            "min": 1.0,
+            "max": 268.0
+        },
+        "Alkalinephos": {
+            "min": 7.0,
+            "max": 3833.0
+        },
+        "Calcium": {
+            "min": 1.0,
+            "max": 27.9
+        },
+        "Chloride": {
+            "min": 26.0,
+            "max": 145.0
+        },
+        "Creatinine": {
+            "min": 0.1,
+            "max": 46.6
+        },
+        "Bilirubin_direct": {
+            "min": 0.01,
+            "max": 37.5
+        },
+        "Glucose": {
+            "min": 10.0,
+            "max": 988.0
+        },
+        "Lactate": {
+            "min": 0.2,
+            "max": 31.0
+        },
+        "Magnesium": {
+            "min": 0.2,
+            "max": 9.8
+        },
+        "Phosphate": {
+            "min": 0.2,
+            "max": 18.8
+        },
+        "Potassium": {
+            "min": 1.0,
+            "max": 27.5
+        },
+        "Bilirubin_total": {
+            "min": 0.1,
+            "max": 49.6
+        },
+        "TroponinI": {
+            "min": 0.01,
+            "max": 440.0
+        },
+        "Hct": {
+            "min": 5.5,
+            "max": 71.7
+        },
+        "Hgb": {
+            "min": 2.2,
+            "max": 32.0
+        },
+        "PTT": {
+            "min": 12.5,
+            "max": 250.0
+        },
+        "WBC": {
+            "min": 0.1,
+            "max": 440.0
+        },
+        "Fibrinogen": {
+            "min": 34.0,
+            "max": 1760.0
+        },
+        "Platelets": {
+            "min": 1.0,
+            "max": 2322.0
+        },
+        "Age": {
+            "min": 14.0,
+            "max": 100.0
+        },
+        "Gender": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "Unit1": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "Unit2": {
+            "min": 0.0,
+            "max": 1.0
+        },
+        "HospAdmTime": {
+            "min": -5366.86,
+            "max": 23.99
+        },
+        "ICULOS": {
+            "min": 1.0,
+            "max": 336.0
+        },
+        "SepsisLabel": {
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    "categorical_unique_values": {
+        "Gender": [
+            0,
+            1
+        ],
+        "Unit1": [
+            0.0,
+            1.0
+        ],
+        "Unit2": [
+            0.0,
+            1.0
+        ],
+        "SepsisLabel": [
+            0,
+            1
+        ],
+        "Dataset": [
+            "training_setA",
+            "training_setB"
+        ]
+    },
+    "patient_count": 40336,
+    "observations_per_patient": {
+        "minimum": 8,
+        "maximum": 336,
+        "mean": 38.482,
+        "median": 38.0
+    },
+    "sepsis_label_distribution": {
+        "0": 1524294,
+        "1": 27916
+    },
+    "sepsis_positive_patient_count": 2932,
+    "non_sepsis_patient_count": 37404,
+    "suspicious_values": {
+        "negative_heart_rate": {
+            "count": 0
+        },
+        "impossible_oxygen_saturation": {
+            "count": 0
+        },
+        "impossible_temperature": {
+            "count": 6
+        },
+        "negative_systolic_blood_pressure": {
+            "count": 0
+        },
+        "negative_mean_arterial_pressure": {
+            "count": 0
+        },
+        "negative_diastolic_blood_pressure": {
+            "count": 0
+        },
+        "negative_EtCO2": {
+            "count": 0
+        },
+        "negative_HCO3": {
+            "count": 0
+        },
+        "negative_FiO2": {
+            "count": 2
+        },
+        "negative_PaCO2": {
+            "count": 0
+        },
+        "negative_SaO2": {
+            "count": 0
+        },
+        "negative_AST": {
+            "count": 0
+        },
+        "negative_BUN": {
+            "count": 0
+        },
+        "negative_Alkalinephos": {
+            "count": 0
+        },
+        "negative_Calcium": {
+            "count": 0
+        },
+        "negative_Chloride": {
+            "count": 0
+        },
+        "negative_Creatinine": {
+            "count": 0
+        },
+        "negative_Bilirubin_direct": {
+            "count": 0
+        },
+        "negative_Bilirubin_total": {
+            "count": 0
+        },
+        "negative_Glucose": {
+            "count": 0
+        },
+        "negative_Lactate": {
+            "count": 0
+        },
+        "negative_Magnesium": {
+            "count": 0
+        },
+        "negative_Phosphate": {
+            "count": 0
+        },
+        "negative_Potassium": {
+            "count": 0
+        },
+        "negative_TroponinI": {
+            "count": 0
+        },
+        "negative_Hct": {
+            "count": 0
+        },
+        "negative_Hgb": {
+            "count": 0
+        },
+        "negative_PTT": {
+            "count": 0
+        },
+        "negative_WBC": {
+            "count": 0
+        },
+        "negative_Fibrinogen": {
+            "count": 0
+        },
+        "negative_Platelets": {
+            "count": 0
+        }
+    }
+}

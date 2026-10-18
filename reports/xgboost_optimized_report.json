@@ -1,0 +1,110 @@
+{
+  "selection_metric": "best patient-level F1 with recall constraint",
+  "minimum_recall": 0.8,
+  "selected_candidate": "precision_balanced",
+  "selected_model_path": "models\\xgboost_optimized.pkl",
+  "feature_count": 196,
+  "class_weight_baseline": 54.543762781186096,
+  "candidates": [
+    {
+      "accuracy": 0.8368787585539503,
+      "precision": 0.0661001188200651,
+      "recall": 0.614848630466122,
+      "f1": 0.1193674783095438,
+      "pr_auc": 0.08767710527370573,
+      "candidate": "baseline",
+      "patient_best": {
+        "precision": 0.15634344297308841,
+        "recall": 0.8318181818181818,
+        "f1_score": 0.2632146709816613,
+        "true_positives": 366,
+        "false_positives": 1975,
+        "false_negatives": 74,
+        "true_negatives": 3635,
+        "predicted_positive_patients": 2341,
+        "actual_positive_patients": 440,
+        "alerts_per_patient": 5.145619834710744,
+        "false_alerts_per_icu_stay": 3.1310160427807485,
+        "roc_auc": 0.8365396613190732,
+        "pr_auc": 0.44950240107897615,
+        "threshold": 0.55,
+        "f1": 0.2632146709816613
+      }
+    },
+    {
+      "accuracy": 0.9126287412732426,
+      "precision": 0.0917547783651891,
+      "recall": 0.43368572801537725,
+      "f1": 0.15146429470504322,
+      "pr_auc": 0.09189615986439865,
+      "candidate": "precision_balanced",
+      "patient_best": {
+        "precision": 0.1628856624319419,
+        "recall": 0.8159090909090909,
+        "f1_score": 0.27155824508320725,
+        "true_positives": 359,
+        "false_positives": 1845,
+        "false_negatives": 81,
+        "true_negatives": 3765,
+        "predicted_positive_patients": 2204,
+        "actual_positive_patients": 440,
+        "alerts_per_patient": 5.005785123966942,
+        "false_alerts_per_icu_stay": 2.9859180035650623,
+        "roc_auc": 0.8394115621455194,
+        "pr_auc": 0.44929556752964983,
+        "threshold": 0.4,
+        "f1": 0.27155824508320725
+      }
+    },
+    {
+      "accuracy": 0.8585358056265985,
+      "precision": 0.07294187957567608,
+      "recall": 0.5864968765016819,
+      "f1": 0.1297472559598161,
+      "pr_auc": 0.0921546187255089,
+      "candidate": "regularized",
+      "patient_best": {
+        "precision": 0.15899403239556692,
+        "recall": 0.8477272727272728,
+        "f1_score": 0.26776740847092606,
+        "true_positives": 373,
+        "false_positives": 1973,
+        "false_negatives": 67,
+        "true_negatives": 3637,
+        "predicted_positive_patients": 2346,
+        "actual_positive_patients": 440,
+        "alerts_per_patient": 5.531404958677686,
+        "false_alerts_per_icu_stay": 3.3823529411764706,
+        "roc_auc": 0.8399335602009399,
+        "pr_auc": 0.44361055334666466,
+        "threshold": 0.5,
+        "f1": 0.26776740847092606
+      }
+    },
+    {
+      "accuracy": 0.7782193958664547,
+      "precision": 0.05529788838612368,
+      "recall": 0.7047092743873138,
+      "f1": 0.10254886192790462,
+      "pr_auc": 0.09164010317840163,
+      "candidate": "recall_balanced",
+      "patient_best": {
+        "precision": 0.15135572642654796,
+        "recall": 0.85,
+        "f1_score": 0.25695637238062524,
+        "true_positives": 374,
+        "false_positives": 2097,
+        "false_negatives": 66,
+        "true_negatives": 3513,
+        "predicted_positive_patients": 2471,
+        "actual_positive_patients": 440,
+        "alerts_per_patient": 5.719669421487604,
+        "false_alerts_per_icu_stay": 3.6001782531194295,
+        "roc_auc": 0.8397083130772971,
+        "pr_auc": 0.45670074981126413,
+        "threshold": 0.6,
+        "f1": 0.25695637238062524
+      }
+    }
+  ]
+}
