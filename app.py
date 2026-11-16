@@ -6,6 +6,7 @@ from pathlib import Path
 
 import pandas as pd
 import joblib
+import matplotlib.pyplot as plt
 import streamlit as st
 import streamlit.components.v1 as components
 
@@ -77,7 +78,22 @@ def main() -> None:
         layout="wide",
     )
 
-    st.title("Early Sepsis Risk Prediction")
+    inject_futuristic_theme()
+    st.markdown(
+        """
+        <section class="console-banner">
+            <div class="console-kicker">EARLY SEPSIS // CLINICAL INTELLIGENCE</div>
+            <div class="console-title">ICU Risk Command Center</div>
+            <div class="console-status"><span class="status-dot"></span> MODEL ONLINE &nbsp;|&nbsp; XGBOOST &nbsp;|&nbsp; 196 FEATURES</div>
+            <div class="console-rail">
+                <span>STREAM: ICU OBSERVATIONS</span>
+                <span>ALERT ENGINE: ACTIVE</span>
+                <span>EXPLANATIONS: SHAP</span>
+            </div>
+        </section>
+        """,
+        unsafe_allow_html=True,
+    )
 
     mode = st.radio(
         "Prediction source",
@@ -95,6 +111,181 @@ def main() -> None:
         run_all_splits_view()
     else:
         run_upload_view()
+
+
+def inject_futuristic_theme() -> None:
+    """Apply a restrained clinical-console visual theme."""
+
+    st.markdown(
+        """
+        <style>
+        :root {
+            --console-bg: #071217;
+            --console-panel: #0d1c22;
+            --console-panel-2: #10242b;
+            --console-line: #1d3a43;
+            --console-cyan: #43d9d2;
+            --console-blue: #77b8ff;
+            --console-amber: #f1c75b;
+            --console-red: #ff6f72;
+            --console-text: #e7f2f2;
+            --console-muted: #8ca6aa;
+        }
+
+        [data-testid="stAppViewContainer"] {
+            background: var(--console-bg);
+            color: var(--console-text);
+        }
+
+        [data-testid="stHeader"] {
+            background: transparent;
+        }
+
+        [data-testid="stSidebar"] {
+            background: #09171c;
+            border-right: 1px solid var(--console-line);
+        }
+
+        .block-container {
+            max-width: 1500px;
+            padding-top: 2.4rem;
+            padding-bottom: 3rem;
+        }
+
+        .console-banner {
+            border: 1px solid var(--console-line);
+            border-left: 4px solid var(--console-cyan);
+            background: var(--console-panel);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.35rem;
+            box-shadow: 0 0 28px rgba(67, 217, 210, 0.08);
+        }
+
+        .console-kicker {
+            color: var(--console-cyan);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+        }
+
+        .console-title {
+            color: var(--console-text);
+            font-size: 2rem;
+            font-weight: 750;
+            letter-spacing: 0.02em;
+            margin: 0.35rem 0 0.55rem;
+        }
+
+        .console-status {
+            color: var(--console-muted);
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+        }
+
+        .console-rail {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem 1.4rem;
+            border-top: 1px solid var(--console-line);
+            margin-top: 1rem;
+            padding-top: 0.7rem;
+            color: #6f8d92;
+            font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+            font-size: 0.64rem;
+            letter-spacing: 0.08em;
+        }
+
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--console-cyan);
+            box-shadow: 0 0 10px var(--console-cyan);
+            animation: consolePulse 1.8s ease-in-out infinite;
+        }
+
+        @keyframes consolePulse {
+            0%, 100% { opacity: 0.55; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.15); }
+        }
+
+        [data-testid="stMetric"] {
+            background: var(--console-panel);
+            border: 1px solid var(--console-line);
+            border-top: 2px solid var(--console-cyan);
+            padding: 0.8rem 1rem;
+            min-height: 108px;
+        }
+
+        [data-testid="stMetricLabel"] {
+            color: var(--console-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.68rem;
+        }
+
+        [data-testid="stMetricValue"] {
+            color: var(--console-text);
+            font-variant-numeric: tabular-nums;
+        }
+
+        [data-baseweb="tab-list"] {
+            gap: 0.2rem;
+            border-bottom: 1px solid var(--console-line);
+        }
+
+        [data-baseweb="tab"] {
+            color: var(--console-muted);
+            background: transparent;
+            border-bottom: 2px solid transparent;
+            padding: 0.7rem 1rem;
+        }
+
+        [aria-selected="true"][data-baseweb="tab"] {
+            color: var(--console-cyan);
+            border-bottom-color: var(--console-cyan);
+        }
+
+        .stButton > button, .stDownloadButton > button {
+            border: 1px solid var(--console-cyan);
+            border-radius: 4px;
+            background: #0c252b;
+            color: var(--console-text);
+        }
+
+        .stButton > button:hover, .stDownloadButton > button:hover {
+            border-color: var(--console-blue);
+            color: var(--console-cyan);
+        }
+
+        [data-testid="stDataFrame"] {
+            border: 1px solid var(--console-line);
+        }
+
+        div[data-testid="stExpander"] {
+            border: 1px solid var(--console-line);
+            background: var(--console-panel);
+        }
+
+        .stCaption, [data-testid="stCaptionContainer"] {
+            color: var(--console-muted);
+        }
+
+        input, textarea, [data-baseweb="select"] > div {
+            background: #0b1b21 !important;
+            border-color: var(--console-line) !important;
+            color: var(--console-text) !important;
+        }
+
+        label, .stRadio label, .stSelectbox label {
+            color: var(--console-muted) !important;
+            letter-spacing: 0.04em;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 @st.cache_data(show_spinner=False)
@@ -186,6 +377,7 @@ def run_all_splits_view() -> None:
         max_risk_probability,
         max_risk_hour,
     )
+    display_patient_comparison(data)
 
 
 def run_existing_dataset_view() -> None:
@@ -237,12 +429,9 @@ def run_existing_dataset_view() -> None:
         height=360,
     )
 
-    st.subheader("Patient Summary")
-    summary = summarize_existing_patient(patient_data)
-    st.json(summary)
-
     display_prediction_output(patient_data)
     display_existing_patient_reason(selected_patient, patient_data)
+    display_patient_comparison(predictions)
 
 
 def validate_uploaded_data(dataframe: pd.DataFrame) -> bool:
@@ -376,12 +565,36 @@ def display_prediction_output(output: pd.DataFrame) -> None:
     """Display hourly risk table, chart, top alerts, and export."""
 
     output = output.copy()
+    display_dashboard_tabs(output)
     probability = output["Sepsis_Probability"].astype(float)
     output["Alert_Severity"] = pd.cut(
         probability,
         bins=[-1, ALERT_THRESHOLD, HIGH_RISK_THRESHOLD, 0.85, 1.0],
         labels=["Routine", "Alert", "High", "Critical"],
     ).astype(str)
+
+    output["Persistent_High_Risk_Alert"] = (
+        consecutive_high_risk_alerts(
+            output,
+            threshold=HIGH_RISK_THRESHOLD,
+            required_consecutive=2,
+        )
+    )
+
+    persistent_alerts = output[output["Persistent_High_Risk_Alert"] == 1]
+    if not persistent_alerts.empty:
+        first_alert = persistent_alerts.iloc[0]
+        st.error(
+            "AUTOMATIC PERSISTENT HIGH-RISK ALERT: "
+            f"risk remained at or above {HIGH_RISK_THRESHOLD:.0%} for "
+            f"at least two observations, beginning around ICU hour "
+            f"{first_alert.get('ICULOS', 'N/A')}. Clinical review is recommended."
+        )
+    else:
+        st.success(
+            "No persistent high-risk pattern was detected using the two-"
+            "observation alert rule."
+        )
 
     high_risk_rows = output[
         output["Sepsis_Probability"] >= HIGH_RISK_THRESHOLD
@@ -467,6 +680,7 @@ def display_prediction_output(output: pd.DataFrame) -> None:
             "Alert",
             "Patient_Sepsis_Prediction",
             "Patient_High_Risk",
+            "Persistent_High_Risk_Alert",
             "SepsisLabel",
             "Risk_Mean_3h",
             "Risk_Max_6h",
@@ -558,6 +772,217 @@ def display_prediction_output(output: pd.DataFrame) -> None:
         file_name="sepsis_prediction_view.csv",
         mime="text/csv",
     )
+
+
+def display_patient_summary(patient_data: pd.DataFrame) -> None:
+    """Display a compact summary for the selected patient."""
+
+    if patient_data.empty:
+        return
+
+    probability = patient_data["Sepsis_Probability"].astype(float)
+    latest = patient_data.iloc[-1]
+    patient_id = latest.get("Patient_ID", "Selected patient")
+    icu_values = pd.to_numeric(patient_data.get("ICULOS"), errors="coerce")
+    latest_hour = icu_values.max() if icu_values is not None else None
+    unit_parts = []
+    for column in ("Unit1", "Unit2"):
+        if column in latest.index and pd.notna(latest[column]):
+            unit_parts.append(f"{column}: {latest[column]}")
+    unit = ", ".join(unit_parts) if unit_parts else "Not available"
+
+    st.subheader("Patient Summary")
+    st.caption(f"Selected patient: {patient_id}")
+    columns = st.columns(5)
+    columns[0].metric("Observations", f"{len(patient_data):,}")
+    columns[1].metric(
+        "ICU stay",
+        f"{latest_hour:.0f} h" if pd.notna(latest_hour) else "N/A",
+    )
+    columns[2].metric("Latest risk", f"{probability.iloc[-1]:.1%}")
+    columns[3].metric("Maximum risk", f"{probability.max():.1%}")
+    columns[4].metric("Latest ICU hour", str(latest_hour) if pd.notna(latest_hour) else "N/A")
+    st.write(f"**Unit:** {unit}")
+
+
+def display_risk_summary_cards(patient_data: pd.DataFrame) -> None:
+    """Display risk summary values for the selected patient."""
+
+    if patient_data.empty:
+        return
+    ordered = patient_data.sort_values("ICULOS", kind="mergesort") if "ICULOS" in patient_data else patient_data
+    probability = ordered["Sepsis_Probability"].astype(float)
+    alert = probability.ge(ALERT_THRESHOLD)
+    latest = float(probability.iloc[-1])
+    first_alert = ordered.loc[alert, "ICULOS"].iloc[0] if alert.any() and "ICULOS" in ordered else None
+    status = "HIGH" if latest >= HIGH_RISK_THRESHOLD else "MODERATE" if latest >= ALERT_THRESHOLD else "LOW"
+
+    st.markdown("**Risk Summary**")
+    columns = st.columns(4)
+    columns[0].metric("Maximum risk", f"{probability.max():.1%}")
+    columns[1].metric("First alert hour", str(first_alert) if first_alert is not None else "None")
+    columns[2].metric("Alert duration", f"{int(alert.sum())} observations")
+    columns[3].metric("Current status", status)
+
+
+def display_dashboard_tabs(output: pd.DataFrame) -> None:
+    """Display the main dashboard sections in tabs."""
+
+    patient_tab, explain_tab, quality_tab = st.tabs(
+        ["Patient View", "Explainability", "Data Quality"]
+    )
+    with patient_tab:
+        display_patient_summary(output)
+        display_risk_summary_cards(output)
+        display_vital_trends(output)
+    with explain_tab:
+        st.info(
+            "The detailed local SHAP explanation is shown below for the "
+            "selected patient's highest-risk observation."
+        )
+    with quality_tab:
+        display_missing_status(output)
+
+
+def consecutive_high_risk_alerts(
+    patient_data: pd.DataFrame,
+    threshold: float,
+    required_consecutive: int,
+) -> pd.Series:
+    """Return an alert flag after the required high-risk streak."""
+
+    ordered = patient_data.copy()
+    if "ICULOS" in ordered.columns:
+        ordered = ordered.sort_values("ICULOS", kind="mergesort")
+    hit = ordered["Sepsis_Probability"].astype(float).ge(threshold)
+    streak = hit.astype(int).groupby((~hit).cumsum()).cumsum()
+    alert = streak.ge(required_consecutive).astype(int)
+    return alert.reindex(patient_data.index, fill_value=0)
+
+
+def display_vital_trends(patient_data: pd.DataFrame) -> None:
+    """Display available vital-sign and lactate trends."""
+
+    available = [
+        column
+        for column in ["HR", "SBP", "MAP", "Temp", "Resp", "Lactate"]
+        if column in patient_data.columns
+        and patient_data[column].notna().any()
+    ]
+    if not available:
+        return
+
+    st.subheader("Vital-Sign Trends")
+    st.caption("Reference bands are screening guides, not diagnostic thresholds.")
+    chart = patient_data.copy()
+    if "ICULOS" in chart.columns:
+        chart = chart.sort_values("ICULOS", kind="mergesort")
+        x_values = chart["ICULOS"]
+    else:
+        x_values = range(len(chart))
+    reference_bands = {
+        "HR": (60, 100),
+        "SBP": (90, 140),
+        "MAP": (65, 100),
+        "Temp": (36, 38),
+        "Resp": (12, 20),
+        "Lactate": (0, 2),
+    }
+    chart_columns = st.columns(2)
+    for index, column in enumerate(available):
+        values = pd.to_numeric(chart[column], errors="coerce")
+        figure, axis = plt.subplots(figsize=(5.2, 2.5))
+        axis.plot(x_values, values, color="#1f77b4", marker="o", linewidth=1.8)
+        if column in reference_bands:
+            lower, upper = reference_bands[column]
+            axis.axhspan(lower, upper, color="#2a9d8f", alpha=0.12)
+            axis.axhline(lower, color="#2a9d8f", linestyle="--", linewidth=0.8)
+            axis.axhline(upper, color="#2a9d8f", linestyle="--", linewidth=0.8)
+        axis.set_xlabel("ICU hour")
+        axis.set_ylabel(column)
+        axis.grid(alpha=0.2)
+        figure.tight_layout()
+        with chart_columns[index % 2]:
+            st.caption(CLINICAL_FEATURES.get(column, column))
+            st.pyplot(figure, clear_figure=True)
+
+
+def display_missing_status(patient_data: pd.DataFrame) -> None:
+    """Display missing-value status for the selected patient's observations."""
+
+    available = [
+        column for column in CLINICAL_FEATURES
+        if column in patient_data.columns
+    ]
+    if not available:
+        return
+
+    missing = patient_data[available].isna().sum().sort_values(ascending=False)
+    missing = missing[missing > 0]
+    st.subheader("Missing-Value Status")
+    if missing.empty:
+        st.success("No missing clinical values were found for this patient view.")
+        return
+
+    missing_table = pd.DataFrame(
+        {
+            "Feature": missing.index,
+            "Missing observations": missing.values,
+            "Missing percentage": (missing.values / len(patient_data) * 100),
+        }
+    )
+    st.dataframe(
+        missing_table.style.format({"Missing percentage": "{:.1f}%"}),
+        use_container_width=True,
+        hide_index=True,
+    )
+
+
+def display_patient_comparison(data: pd.DataFrame) -> None:
+    """Compare risk trends for two patients from a loaded dataset."""
+
+    if "Patient_ID" not in data.columns or "Sepsis_Probability" not in data.columns:
+        return
+    patient_ids = data["Patient_ID"].drop_duplicates().tolist()
+    if len(patient_ids) < 2:
+        return
+
+    st.subheader("Patient Comparison")
+    st.caption("Compare two patients using their predicted sepsis-risk trends.")
+    left, right = st.columns(2)
+    first = left.selectbox("Patient A", patient_ids, key="comparison_patient_a")
+    second_options = [patient_id for patient_id in patient_ids if patient_id != first]
+    second = right.selectbox(
+        "Patient B",
+        second_options,
+        index=0,
+        key="comparison_patient_b",
+    )
+
+    figure, axis = plt.subplots(figsize=(10, 4))
+    for patient_id, color in ((first, "#1f77b4"), (second, "#e76f51")):
+        patient = data[data["Patient_ID"] == patient_id].copy()
+        if "ICULOS" in patient.columns:
+            patient = patient.sort_values("ICULOS", kind="mergesort")
+            x_values = patient["ICULOS"]
+        else:
+            x_values = range(len(patient))
+        axis.plot(
+            x_values,
+            patient["Sepsis_Probability"].astype(float),
+            label=str(patient_id),
+            color=color,
+            linewidth=2,
+        )
+    axis.axhline(ALERT_THRESHOLD, color="#e9c46a", linestyle="--", label="Alert threshold")
+    axis.axhline(HIGH_RISK_THRESHOLD, color="#e76f51", linestyle=":", label="High-risk threshold")
+    axis.set_xlabel("ICU hour")
+    axis.set_ylabel("Sepsis probability")
+    axis.set_ylim(0, 1)
+    axis.legend()
+    axis.grid(alpha=0.2)
+    figure.tight_layout()
+    st.pyplot(figure, clear_figure=True)
 
 
 def display_existing_patient_reason(
@@ -762,6 +1187,23 @@ def display_local_shap_reason(row: pd.DataFrame) -> None:
         local["clinical_term"] = local["feature"].map(clinical_term_for_feature)
         local["direction"] = local["shap_value"].map(
             lambda value: "Increases predicted risk" if value > 0 else "Decreases predicted risk"
+        )
+        top_three = local.sort_values(
+            "absolute_contribution", ascending=False
+        ).head(3)
+        st.markdown("**Top three SHAP reasons for this prediction**")
+        st.dataframe(
+            top_three[
+                [
+                    "feature",
+                    "clinical_term",
+                    "patient_value",
+                    "shap_value",
+                    "direction",
+                ]
+            ],
+            hide_index=True,
+            use_container_width=True,
         )
         positive = local[local["shap_value"] > 0].sort_values(
             "shap_value", ascending=False

@@ -19,16 +19,14 @@ ENV/
 .ipynb_checkpoints/
 
 # Data and generated artifacts
-data/raw/*
-data/interim/*
-data/processed/*
-data/external/*
-models/*
+data/
+models/
 reports/figures/*
 reports/metrics/*
 logs/*
 *.log
 docx_render_check/
+tmp/
 
 # Keep directory placeholders if added later
 !.gitkeep
