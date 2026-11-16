@@ -470,6 +470,15 @@ def run_upload_view() -> None:
             "Upload a CSV containing hourly observations. "
             "Patient_ID and ICULOS are optional; missing values are allowed."
         )
+        sample_path = Path("sample_patient_input.csv")
+        if sample_path.exists():
+            st.download_button(
+                "📥 Download Sample Patient CSV (for testing)",
+                data=sample_path.read_bytes(),
+                file_name="sample_patient.csv",
+                mime="text/csv",
+                help="Download this sample CSV and upload it above to test predictions.",
+            )
         st.dataframe(
             pd.DataFrame(columns=["Patient_ID", "ICULOS", *REQUIRED_COLUMNS])
         )

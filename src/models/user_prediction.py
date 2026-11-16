@@ -161,13 +161,6 @@ class NewPatientPredictor:
                 f"{self.model_path}"
             )
 
-        if not self.training_path.exists():
-
-            raise FileNotFoundError(
-                f"Training dataset not found: "
-                f"{self.training_path}"
-            )
-
         self.model = joblib.load(
             self.model_path
         )
@@ -175,6 +168,26 @@ class NewPatientPredictor:
         print(
             "Model loaded successfully."
         )
+
+        meta_path = Path("models/training_metadata.json")
+        if meta_path.exists():
+            import json
+            with open(meta_path, "r", encoding="utf-8") as f:
+                meta = json.load(f)
+            self.feature_columns = meta["feature_columns"]
+            self.missing_indicator_columns = meta["missing_indicator_columns"]
+            self.training_medians = meta["training_medians"]
+            print(f"Model features: {len(self.feature_columns)}")
+            print(f"Missing indicators: {len(self.missing_indicator_columns)}")
+            print(f"Expected model features: {len(self.feature_columns)}")
+            return
+
+        if not self.training_path.exists():
+
+            raise FileNotFoundError(
+                f"Training dataset not found: "
+                f"{self.training_path}"
+            )
 
         # ----------------------------------------------------
         # Load processed training data.

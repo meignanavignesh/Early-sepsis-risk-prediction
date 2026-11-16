@@ -19,8 +19,18 @@ ENV/
 .ipynb_checkpoints/
 
 # Data and generated artifacts
-data/
-models/
+data/raw/
+data/interim/
+data/experiments/
+data/processed/preprocessed/
+data/processed/splits/
+data/processed/cleaned_dataset.csv
+data/processed/engineered_dataset.csv
+data/processed/*_full.csv
+data/processed/model_ready/*_full.csv
+
+models/random_forest.pkl
+models/experiments/
 reports/figures/*
 reports/metrics/*
 logs/*
